@@ -6,5 +6,7 @@ target 'NoteToDEVONthink' do
   use_frameworks!
 
   # Pods for NoteToDEVONthink
-    pod "Floaty", "~> 4.0.0" # Use version 4.0.0 for Swift 4.0
+    pod "Floaty", "~> 4.0.0" 
+    pod 'Disk', '~> 0.3.3'
+    pod 'Down'
 end

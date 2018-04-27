@@ -7,67 +7,245 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A113A2FC5F91269AB55DF9FA683015F /* Floaty.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86DA716C290E542D2067A7FFC0CE7A1 /* Floaty.swift */; };
-		1982E7ED9231E948A558799362FEA8B3 /* Floaty-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4E4EFADD39C5C169824A93CDB058FE /* Floaty-dummy.m */; };
+		000657B09AF9B64204E16018F1787CE9 /* Down-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F8C8DE622A01E8AD2F2E5D0DF402E565 /* Down-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00B7B14F56CEF93D3AEF16FE7BBC88FB /* cmark.c in Sources */ = {isa = PBXBuildFile; fileRef = ABA25DF4976A898EF368EDB49609D5DD /* cmark.c */; };
+		036622B83802F5AB58562ABCC92C7317 /* DownASTRenderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA9CB2822411DD74AD5002A0E2261BF /* DownASTRenderable.swift */; };
+		0A113A2FC5F91269AB55DF9FA683015F /* Floaty.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9313AB95D0102AEC09A53F3AB0615D8 /* Floaty.swift */; };
+		0C8D2787A722FC732DB1734048FC9A98 /* debug.h in Headers */ = {isa = PBXBuildFile; fileRef = AC21C5842934E13EFAA41C20D1234670 /* debug.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		155278697DE95FE85991CE469BE2935B /* Disk+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F670E7AC583F59024BDC61A9B7781A8 /* Disk+Codable.swift */; };
+		192A95A4AC7C06AC37B1669A9D5DD113 /* render.h in Headers */ = {isa = PBXBuildFile; fileRef = 7359CD8A45768E609205B5CC1DAF4F8C /* render.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1982E7ED9231E948A558799362FEA8B3 /* Floaty-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 217F9F6EA57C1939804B8E0010A06053 /* Floaty-dummy.m */; };
+		19D3704943FCF2DCA40E9C9985CF5F93 /* String+ToHTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8C107704CA17E8995577F89F7A9971 /* String+ToHTML.swift */; };
+		1A1D3BDA76E13F7406EF4D1BC7EFA8C2 /* DownLaTeXRenderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6336F6BF72EA86DF5FA8BB9DFFE09428 /* DownLaTeXRenderable.swift */; };
+		1BB7826C6D9A2EAC1722BE2045528478 /* references.c in Sources */ = {isa = PBXBuildFile; fileRef = 85C59ADBB226584BA013AC50601D05BC /* references.c */; };
+		1BF68BC5E00AEC673F987CB8F00CB98D /* cmark_version.h in Headers */ = {isa = PBXBuildFile; fileRef = 4412721F011E326D194A1F66BE74740B /* cmark_version.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1F7FCBDFA749703EA43C9F35CA35CD92 /* scanners.c in Sources */ = {isa = PBXBuildFile; fileRef = 5560EE0EF0491339A1CE21541EBDB313 /* scanners.c */; };
+		20113E09ADF2B6297A0A7D098B0C410B /* Down.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A8CD06B904A189B023C71C4BD8EA6D5 /* Down.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2252FFFCBAFFF5F169D06F648243CC15 /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = C04A8F2767499455CDA6974D00B90285 /* buffer.c */; };
+		258E5A8DF0A54291EC9DC2A38BE376D3 /* node.c in Sources */ = {isa = PBXBuildFile; fileRef = 46971F63F73052355453C09184537834 /* node.c */; };
+		25A53A6E59E989464EC09DA6D466CFFE /* COPYING in Sources */ = {isa = PBXBuildFile; fileRef = 0640D9827898C5251F853AF709FE6C57 /* COPYING */; };
+		2BC6137728D4457C916A5035F8BFECDB /* Down-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2B45036AB8085AF1DA148B24FA8E70 /* Down-dummy.m */; };
+		2E84CEFE84205D66F36692A6520E9E64 /* DownOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AB6B35B508C0BBA81E67269B90401B /* DownOptions.swift */; };
+		2EBE11218D9CDEEE1BD343FB621ECBE9 /* iterator.c in Sources */ = {isa = PBXBuildFile; fileRef = 0526FBD339646706BDAE7D6694770465 /* iterator.c */; };
 		2F30735E6BB3BB6DD455904BE0452769 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		31DEB9C293D974C0014F52E7853C3E0B /* FloatyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEA36A70A509FA36B3ADFBBD2664E1F /* FloatyItem.swift */; };
-		530356FC11C4F4A1F641A30F65C5684F /* FloatyWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3D5847743F50BD3DDF8766A24DC2A3 /* FloatyWindow.swift */; };
+		30DC9C33F0E912559DC7ABE5EF3672FD /* inlines.c in Sources */ = {isa = PBXBuildFile; fileRef = 47912E50FA7931B400D9A4C59EA01AA0 /* inlines.c */; };
+		31DEB9C293D974C0014F52E7853C3E0B /* FloatyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E507F48C459506B35C4407826128E8E3 /* FloatyItem.swift */; };
+		3577BE35AC5EBB6FF6558E1FE7619B4B /* houdini_href_e.c in Sources */ = {isa = PBXBuildFile; fileRef = 03BB101999A7A66CF0A3F5292D769D21 /* houdini_href_e.c */; };
+		44330E3B11E04DBAF9BF2AF5529EEBBC /* parser.h in Headers */ = {isa = PBXBuildFile; fileRef = 20E5CA1E66B6290CF9F8F31D92C6DB13 /* parser.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		464CCAE1853887B3306C86AD6667D041 /* cmark_ctype.c in Sources */ = {isa = PBXBuildFile; fileRef = 3341F8D92906B5688FA7237F3E04BB49 /* cmark_ctype.c */; };
+		468446246C31037127AB0A849901C388 /* cmark_ctype.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E4510E06E9D9338FC58936218B7F1FF /* cmark_ctype.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4DD6D7274709B4B711C6975FD2ECF175 /* cmark.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B6F7A975F263B74D55A826F1339A8D2 /* cmark.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4EB6BE72DDD21CEEF431CCE5991F4B77 /* inlines.h in Headers */ = {isa = PBXBuildFile; fileRef = 295CDC29B22AC0A5A82A93DD13FDA250 /* inlines.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		530356FC11C4F4A1F641A30F65C5684F /* FloatyWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CF9838F0E2E4FD4390FD866F1C7250 /* FloatyWindow.swift */; };
+		536507A41ABDA6D2410DF51E8D61563E /* DownAttributedStringRenderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBB651571BBD1C3962CB69C08E93482 /* DownAttributedStringRenderable.swift */; };
+		549A8AC39E33F5799DAE0D79C0FCAAB1 /* DownCommonMarkRenderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA68B7A1DC04AE9D58496710522B2678 /* DownCommonMarkRenderable.swift */; };
+		54B4D9D1D7107638B4E79C329028CC10 /* Disk+[UIImage].swift in Sources */ = {isa = PBXBuildFile; fileRef = 7626DFEB7AC28F5EA21440670929534E /* Disk+[UIImage].swift */; };
+		550F3F1B72DA9C3061D3E8B756FE0D61 /* utf8.h in Headers */ = {isa = PBXBuildFile; fileRef = B7604CE22E02862C85CDD35F5C36667E /* utf8.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		56986EB3048E82C2E75C08062A76BEEC /* commonmark.c in Sources */ = {isa = PBXBuildFile; fileRef = 4FD8854ACF435EEA4DE2EC45AFC9A6D3 /* commonmark.c */; };
+		57F5F0E4502788A2CA95F2B30D4AFCE3 /* Disk+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B59D43E0B4E55135AEFCB402FC4ED96 /* Disk+Helpers.swift */; };
+		5B1CCF775E8B99EFDAF99B7C31039A03 /* buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 88107509023D9B6236FB76366B9AAE47 /* buffer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		619AB476DE5632F2986E6A9BDCB651E8 /* module.modulemap in Sources */ = {isa = PBXBuildFile; fileRef = 35670197A2CBDCF8D3153A548653FA19 /* module.modulemap */; };
+		6BB217A47BF12EC0E5C2985276E3499B /* case_fold_switch.inc in Sources */ = {isa = PBXBuildFile; fileRef = D3E2B20D1E8283ADAAF2F0AE9545C048 /* case_fold_switch.inc */; };
+		6F0B2BE8EB0273B15DD59ADA5CE3912B /* Disk.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52A9D5C64C8A246BBE6185A5A6A17AF /* Disk.swift */; };
 		7060C75B128119AE663619DCED898CF8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
-		7067387FF3974A5BA87F204F718C33F5 /* Floaty-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FAB772C35B61EE64725539473A097D91 /* Floaty-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		846758B414123E512DF59BFC6B88B4F4 /* Pods-NoteToDEVONthink-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3B900311136824B8CED1ED9643AF53 /* Pods-NoteToDEVONthink-dummy.m */; };
-		8E96697B51D3FD3DB5EB1BE3EF02B411 /* FloatyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68476F9B1E02EDABC3F62BEF2754AE99 /* FloatyManager.swift */; };
-		9054A1CA64F47D0BEE3744D146CD26A2 /* FloatyDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34068DE07EEF2DFBCCFAAA54BEDEAFFA /* FloatyDelegate.swift */; };
-		C2EC423E169845C02678A4983A1E56D5 /* Pods-NoteToDEVONthink-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 52B03B77ACF8E5A8C54A26E2DA6BBE66 /* Pods-NoteToDEVONthink-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D7AC4DA25CCD62D7CD5D771E3705B11F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		F5B4C3EE44C285ACF24E077895435175 /* FloatyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2995F2534E42B250E0B1405156407A7 /* FloatyViewController.swift */; };
+		7067387FF3974A5BA87F204F718C33F5 /* Floaty-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DC45CAC4BDCDB42BDAFAE7A2E52CEA2D /* Floaty-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		731CF9298D7CD8F1071548107BBCC44F /* iterator.h in Headers */ = {isa = PBXBuildFile; fileRef = CD5E04AF5BC99679E1F4A502C5B9F9EB /* iterator.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7800242EB559ED216DA3F86A40F506ED /* cmark_export.h in Headers */ = {isa = PBXBuildFile; fileRef = FDACBE1C2C2766CC8753E4BFADE7762E /* cmark_export.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7BE32500F19D20C12FE80F35A03FEE09 /* scanners.h in Headers */ = {isa = PBXBuildFile; fileRef = 5008425726BB0F59A030679CEC774373 /* scanners.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		83C9D84D18F068C8E7DB4E13A3892EF2 /* houdini.h in Headers */ = {isa = PBXBuildFile; fileRef = 7352D553FB4CF7B21B93B26E915E065F /* houdini.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		83EA7147D8AC3C38F2387F461DF58C84 /* references.h in Headers */ = {isa = PBXBuildFile; fileRef = EC25918827C321CD5D10E6C29A387EAF /* references.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		87CF22D207D6D38A8FEA9F8C12975BCA /* Disk+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6C83975F182E4D977F18C63E2FDB91 /* Disk+UIImage.swift */; };
+		88386782A5E1E9642DCF4DF0EC96AB6E /* xml.c in Sources */ = {isa = PBXBuildFile; fileRef = D3DA79D693569071AA265F4D8DF394B4 /* xml.c */; };
+		8E96697B51D3FD3DB5EB1BE3EF02B411 /* FloatyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBA73D9CDDEBB9C85CEA451DDA6FD25 /* FloatyManager.swift */; };
+		8EC11CA26BF537F56332125FA6507E3B /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C2B848D2C6BD66B882631F8C0524CCF /* config.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9054A1CA64F47D0BEE3744D146CD26A2 /* FloatyDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DFD29BA8631ECED06D75EED777A206 /* FloatyDelegate.swift */; };
+		94A76FFDEBE9C06258A4C105C725548F /* chunk.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B4EB5B2FB82DB0464980F3125EEE873 /* chunk.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9607B943866A9E9C00BB3029FCA0B844 /* houdini_html_e.c in Sources */ = {isa = PBXBuildFile; fileRef = 1D44E09D237AFFD89C3155C1C3DA42B4 /* houdini_html_e.c */; };
+		96AB8684DCD75FEDEE26C6CC8DE979ED /* DownErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0610277B7CA59FA3904EC9B86DE1AB0A /* DownErrors.swift */; };
+		970DD86D3E55F3D1DFDF4A9DBAAE8298 /* Pods-NoteToDEVONthink-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3B900311136824B8CED1ED9643AF53 /* Pods-NoteToDEVONthink-dummy.m */; };
+		9B2853D986ADAB2AB60E6D6C52BE1104 /* entities.inc in Sources */ = {isa = PBXBuildFile; fileRef = CF2902636D0E95A62995D4DD5CE16352 /* entities.inc */; };
+		9DE6610DDFE487E18D954D324AAA2AE4 /* DownGroffRenderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C67AB18BFC3BE656EB25A200409046 /* DownGroffRenderable.swift */; };
+		A0A196E7E9FFCEA5B45709E2E7CAF9C3 /* node.h in Headers */ = {isa = PBXBuildFile; fileRef = F4F96E0C236F53CE50344199E0358E39 /* node.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A8F909B39333B28D10A25EFC8F6206AF /* Disk-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FB0FF85B0817D0C1614D4CF10A9E1B6D /* Disk-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF5ED2D9D9641F1CA246075046A9C5DF /* DownHTMLRenderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C005ED9C37AE4426BF78622D1D0BB329 /* DownHTMLRenderable.swift */; };
+		AFB5DF952786BEE60F3F6FE3EFD2CF32 /* Disk-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3713DF786E42FD161057B7D9E4D1EBC /* Disk-dummy.m */; };
+		AFE4728D9E4768E5811DAA1738816D92 /* DownRenderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4537B50FC985C0391056F4165E852192 /* DownRenderable.swift */; };
+		B030630A8830E986FE0DA4A30962FB34 /* man.c in Sources */ = {isa = PBXBuildFile; fileRef = 40A7C6C5341D873FD48D65EC43393F1B /* man.c */; };
+		B389F193C856F168B09FF64C805EAD4D /* Disk+Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FB40FDE3AC73274DF92A57125A3CD7 /* Disk+Errors.swift */; };
+		B46C49D9F00BE136657F59D914D6A0C6 /* houdini_html_u.c in Sources */ = {isa = PBXBuildFile; fileRef = FFBA44D8B29741BC005C8C53B69A9B21 /* houdini_html_u.c */; };
+		C327377D21FD721380A6AADDCBA57B1D /* latex.c in Sources */ = {isa = PBXBuildFile; fileRef = 3075D5AC83A2D80D7D6BBC6A72C62C89 /* latex.c */; };
+		C42520A6C7563E0A3996FC90931135DB /* Pods-NoteToDEVONthink-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 52B03B77ACF8E5A8C54A26E2DA6BBE66 /* Pods-NoteToDEVONthink-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C90319AD1CBE6A1562D75FCDBEBBA5E0 /* Disk+InternalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA9479F4866E2FDC07CC030DF7C652 /* Disk+InternalHelpers.swift */; };
+		D2CC2D6DAD0F3D1426794BFA9DF3318B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		D5426D24FACD6E34D5B83FC867EF7EAD /* Disk+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = C689C51E16434EAEA0E0F3CE5EDF0215 /* Disk+Data.swift */; };
+		D7915ECA8F8B0CE609CA03B9F3F6DCB5 /* blocks.c in Sources */ = {isa = PBXBuildFile; fileRef = 6855B57CCB8C4C4094401C1D5F7598C1 /* blocks.c */; };
+		DC1233036640AC86D8ADE76938EE475C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		E0A7230C0FB6E678EFAEA3D9B3264F0B /* DownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17ED93DBE420BD8767F8C81FF1930C65 /* DownView.swift */; };
+		E8030598DD5BC1C0760B1E117B278ECC /* DownXMLRenderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0749273B562A515EA722D71141FE688 /* DownXMLRenderable.swift */; };
+		E90CDDCDAD5F6B662A23A3DACAE975CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		E93C648B7C5015A9AB600BC4CE21E344 /* html.c in Sources */ = {isa = PBXBuildFile; fileRef = 52AF6157BC6F01E0BAD949C6C46BB860 /* html.c */; };
+		E96F9D9AC2CBC32D907EF5C081E5D13E /* html_unescape.h in Headers */ = {isa = PBXBuildFile; fileRef = 29A6E54586C4E0BE66621EE35EC930C7 /* html_unescape.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EE6FC0533BCE4FC251FE1D27C528B104 /* render.c in Sources */ = {isa = PBXBuildFile; fileRef = D94FBD75A472073418D0F86F72A88B66 /* render.c */; };
+		EE7685DBFFDAB89FA29C17E75151F821 /* Down.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9A51404ED6678A7FD2E88689F2B966 /* Down.swift */; };
+		EE8987E449D9C08E54DC7F6ECC763BE2 /* NSAttributedString+HTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B09D7221AA3CF1425BBA11F38B24B2E /* NSAttributedString+HTML.swift */; };
+		EEC58E9F92789CE9F44909BFA6592BF4 /* Disk+[Data].swift in Sources */ = {isa = PBXBuildFile; fileRef = 731298EBAB65FF6BB9EA78B1BF69A9FC /* Disk+[Data].swift */; };
+		EEF0930DC9A866CA97209104C3BDE95D /* Disk.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F0DA7464CF405AF800F7C825EF9EEAD /* Disk.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0B89DE0DF4D5162721A2E6D4DF90173 /* DownView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B60584ADCCF3DD48F68A40111CC12F50 /* DownView.bundle */; };
+		F138D47E78EB875A53715B233BB93CDD /* Disk+VolumeInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E46EE2190A99D81F3457D812ABC0BE /* Disk+VolumeInformation.swift */; };
+		F5B4C3EE44C285ACF24E077895435175 /* FloatyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BADDFFDA38345965DB7731410FE7573 /* FloatyViewController.swift */; };
+		F7755E3B95D2BCDE6EECC35C68E09824 /* utf8.c in Sources */ = {isa = PBXBuildFile; fileRef = 1E199A3FA960F705B80012D3771EEE10 /* utf8.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		046E5D966F48CF1CD3E6BEAB7352E7CE /* PBXContainerItemProxy */ = {
+		13D35431C682248C9CD726F4ECE08700 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 5C123A74CD9D6CDA27160800BA68B01A;
 			remoteInfo = Floaty;
 		};
+		2F73E17148A4CBCA7361400DB26957E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43134A787828ADAA327E8EB54C1E5F6B;
+			remoteInfo = Down;
+		};
+		5A139823E558548458BE8A238622E7C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1691E754022217B52671D98A23731A08;
+			remoteInfo = Disk;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03BB101999A7A66CF0A3F5292D769D21 /* houdini_href_e.c */ = {isa = PBXFileReference; includeInIndex = 1; name = houdini_href_e.c; path = Source/cmark/houdini_href_e.c; sourceTree = "<group>"; };
+		0526FBD339646706BDAE7D6694770465 /* iterator.c */ = {isa = PBXFileReference; includeInIndex = 1; name = iterator.c; path = Source/cmark/iterator.c; sourceTree = "<group>"; };
+		0610277B7CA59FA3904EC9B86DE1AB0A /* DownErrors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DownErrors.swift; path = "Source/Enums & Options/DownErrors.swift"; sourceTree = "<group>"; };
+		0640D9827898C5251F853AF709FE6C57 /* COPYING */ = {isa = PBXFileReference; includeInIndex = 1; name = COPYING; path = Source/cmark/COPYING; sourceTree = "<group>"; };
 		07BCCE1E1FC9A8875DFE87EEDF80CDE0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		34068DE07EEF2DFBCCFAAA54BEDEAFFA /* FloatyDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatyDelegate.swift; path = Sources/FloatyDelegate.swift; sourceTree = "<group>"; };
-		3E4E4EFADD39C5C169824A93CDB058FE /* Floaty-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Floaty-dummy.m"; sourceTree = "<group>"; };
-		4626C8D04B1A79550D924B396FA034FF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A8CD06B904A189B023C71C4BD8EA6D5 /* Down.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Down.h; path = Source/Down.h; sourceTree = "<group>"; };
+		0B6F7A975F263B74D55A826F1339A8D2 /* cmark.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cmark.h; path = Source/cmark/cmark.h; sourceTree = "<group>"; };
+		0E4510E06E9D9338FC58936218B7F1FF /* cmark_ctype.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cmark_ctype.h; path = Source/cmark/cmark_ctype.h; sourceTree = "<group>"; };
+		17ED93DBE420BD8767F8C81FF1930C65 /* DownView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DownView.swift; path = Source/Views/DownView.swift; sourceTree = "<group>"; };
+		18830D6D0970E0C10AC8754B0D76DEC6 /* Down.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Down.modulemap; sourceTree = "<group>"; };
+		1B09D7221AA3CF1425BBA11F38B24B2E /* NSAttributedString+HTML.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSAttributedString+HTML.swift"; path = "Source/Extensions/NSAttributedString+HTML.swift"; sourceTree = "<group>"; };
+		1C8C107704CA17E8995577F89F7A9971 /* String+ToHTML.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+ToHTML.swift"; path = "Source/Extensions/String+ToHTML.swift"; sourceTree = "<group>"; };
+		1D44E09D237AFFD89C3155C1C3DA42B4 /* houdini_html_e.c */ = {isa = PBXFileReference; includeInIndex = 1; name = houdini_html_e.c; path = Source/cmark/houdini_html_e.c; sourceTree = "<group>"; };
+		1E199A3FA960F705B80012D3771EEE10 /* utf8.c */ = {isa = PBXFileReference; includeInIndex = 1; name = utf8.c; path = Source/cmark/utf8.c; sourceTree = "<group>"; };
+		1EBB651571BBD1C3962CB69C08E93482 /* DownAttributedStringRenderable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DownAttributedStringRenderable.swift; path = Source/Renderers/DownAttributedStringRenderable.swift; sourceTree = "<group>"; };
+		1F0DA7464CF405AF800F7C825EF9EEAD /* Disk.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Disk.h; path = Sources/Disk.h; sourceTree = "<group>"; };
+		20E5CA1E66B6290CF9F8F31D92C6DB13 /* parser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = parser.h; path = Source/cmark/parser.h; sourceTree = "<group>"; };
+		217F9F6EA57C1939804B8E0010A06053 /* Floaty-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Floaty-dummy.m"; sourceTree = "<group>"; };
+		295CDC29B22AC0A5A82A93DD13FDA250 /* inlines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = inlines.h; path = Source/cmark/inlines.h; sourceTree = "<group>"; };
+		29A6E54586C4E0BE66621EE35EC930C7 /* html_unescape.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = html_unescape.h; path = Source/cmark/html_unescape.h; sourceTree = "<group>"; };
+		3075D5AC83A2D80D7D6BBC6A72C62C89 /* latex.c */ = {isa = PBXFileReference; includeInIndex = 1; name = latex.c; path = Source/cmark/latex.c; sourceTree = "<group>"; };
+		3341F8D92906B5688FA7237F3E04BB49 /* cmark_ctype.c */ = {isa = PBXFileReference; includeInIndex = 1; name = cmark_ctype.c; path = Source/cmark/cmark_ctype.c; sourceTree = "<group>"; };
+		35670197A2CBDCF8D3153A548653FA19 /* module.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = module.modulemap; path = Source/cmark/module.modulemap; sourceTree = "<group>"; };
+		3712AAB5E5D284859D934470C3627DBE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39E46EE2190A99D81F3457D812ABC0BE /* Disk+VolumeInformation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+VolumeInformation.swift"; path = "Sources/Disk+VolumeInformation.swift"; sourceTree = "<group>"; };
+		3DA9CB2822411DD74AD5002A0E2261BF /* DownASTRenderable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DownASTRenderable.swift; path = Source/Renderers/DownASTRenderable.swift; sourceTree = "<group>"; };
+		40A7C6C5341D873FD48D65EC43393F1B /* man.c */ = {isa = PBXFileReference; includeInIndex = 1; name = man.c; path = Source/cmark/man.c; sourceTree = "<group>"; };
+		4412721F011E326D194A1F66BE74740B /* cmark_version.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cmark_version.h; path = Source/cmark/cmark_version.h; sourceTree = "<group>"; };
+		44F73BEF02043401C878ED3850F90D33 /* Floaty.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Floaty.xcconfig; sourceTree = "<group>"; };
+		4537B50FC985C0391056F4165E852192 /* DownRenderable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DownRenderable.swift; path = Source/Renderers/DownRenderable.swift; sourceTree = "<group>"; };
+		46971F63F73052355453C09184537834 /* node.c */ = {isa = PBXFileReference; includeInIndex = 1; name = node.c; path = Source/cmark/node.c; sourceTree = "<group>"; };
+		47912E50FA7931B400D9A4C59EA01AA0 /* inlines.c */ = {isa = PBXFileReference; includeInIndex = 1; name = inlines.c; path = Source/cmark/inlines.c; sourceTree = "<group>"; };
+		4BADDFFDA38345965DB7731410FE7573 /* FloatyViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatyViewController.swift; path = Sources/FloatyViewController.swift; sourceTree = "<group>"; };
+		4D6C83975F182E4D977F18C63E2FDB91 /* Disk+UIImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+UIImage.swift"; path = "Sources/Disk+UIImage.swift"; sourceTree = "<group>"; };
+		4FD8854ACF435EEA4DE2EC45AFC9A6D3 /* commonmark.c */ = {isa = PBXFileReference; includeInIndex = 1; name = commonmark.c; path = Source/cmark/commonmark.c; sourceTree = "<group>"; };
+		5008425726BB0F59A030679CEC774373 /* scanners.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = scanners.h; path = Source/cmark/scanners.h; sourceTree = "<group>"; };
+		52AF6157BC6F01E0BAD949C6C46BB860 /* html.c */ = {isa = PBXFileReference; includeInIndex = 1; name = html.c; path = Source/cmark/html.c; sourceTree = "<group>"; };
 		52B03B77ACF8E5A8C54A26E2DA6BBE66 /* Pods-NoteToDEVONthink-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NoteToDEVONthink-umbrella.h"; sourceTree = "<group>"; };
-		5C425F6252F4371E188CC46F62A751E1 /* Floaty-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Floaty-prefix.pch"; sourceTree = "<group>"; };
+		5560EE0EF0491339A1CE21541EBDB313 /* scanners.c */ = {isa = PBXFileReference; includeInIndex = 1; name = scanners.c; path = Source/cmark/scanners.c; sourceTree = "<group>"; };
+		56CF9838F0E2E4FD4390FD866F1C7250 /* FloatyWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatyWindow.swift; path = Sources/FloatyWindow.swift; sourceTree = "<group>"; };
+		5DFCDF21297E2E316DF73B0C43A0BB3E /* Floaty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Floaty.framework; path = Floaty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F670E7AC583F59024BDC61A9B7781A8 /* Disk+Codable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+Codable.swift"; path = "Sources/Disk+Codable.swift"; sourceTree = "<group>"; };
 		5FEAF9A7118FE732570AF4C7B279D3D6 /* Pods-NoteToDEVONthink.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NoteToDEVONthink.modulemap"; sourceTree = "<group>"; };
-		68476F9B1E02EDABC3F62BEF2754AE99 /* FloatyManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatyManager.swift; path = Sources/FloatyManager.swift; sourceTree = "<group>"; };
+		6336F6BF72EA86DF5FA8BB9DFFE09428 /* DownLaTeXRenderable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DownLaTeXRenderable.swift; path = Source/Renderers/DownLaTeXRenderable.swift; sourceTree = "<group>"; };
+		6855B57CCB8C4C4094401C1D5F7598C1 /* blocks.c */ = {isa = PBXFileReference; includeInIndex = 1; name = blocks.c; path = Source/cmark/blocks.c; sourceTree = "<group>"; };
 		70E22CC7E95AE0D60AB42F3A0CC70D22 /* Pods-NoteToDEVONthink-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NoteToDEVONthink-acknowledgements.plist"; sourceTree = "<group>"; };
 		71C0891EE3CB2B500E1C4D3FB3782309 /* Pods-NoteToDEVONthink-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NoteToDEVONthink-resources.sh"; sourceTree = "<group>"; };
-		844760DDD8444DE3962E83822737D287 /* Floaty.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Floaty.xcconfig; sourceTree = "<group>"; };
+		724C07C3FADE1D1BBA80CB8466A4C15B /* Floaty.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Floaty.modulemap; sourceTree = "<group>"; };
+		731298EBAB65FF6BB9EA78B1BF69A9FC /* Disk+[Data].swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+[Data].swift"; path = "Sources/Disk+[Data].swift"; sourceTree = "<group>"; };
+		7352D553FB4CF7B21B93B26E915E065F /* houdini.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = houdini.h; path = Source/cmark/houdini.h; sourceTree = "<group>"; };
+		7359CD8A45768E609205B5CC1DAF4F8C /* render.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = render.h; path = Source/cmark/render.h; sourceTree = "<group>"; };
+		7626DFEB7AC28F5EA21440670929534E /* Disk+[UIImage].swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+[UIImage].swift"; path = "Sources/Disk+[UIImage].swift"; sourceTree = "<group>"; };
+		7A9DADBE3C7CC3945B1E6F188F0619C3 /* Down.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Down.xcconfig; sourceTree = "<group>"; };
+		7B59D43E0B4E55135AEFCB402FC4ED96 /* Disk+Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+Helpers.swift"; path = "Sources/Disk+Helpers.swift"; sourceTree = "<group>"; };
+		7CB2CDF2FABF320A70AB7C4EFC2566DB /* Down-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Down-prefix.pch"; sourceTree = "<group>"; };
+		85C59ADBB226584BA013AC50601D05BC /* references.c */ = {isa = PBXFileReference; includeInIndex = 1; name = references.c; path = Source/cmark/references.c; sourceTree = "<group>"; };
+		88107509023D9B6236FB76366B9AAE47 /* buffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = buffer.h; path = Source/cmark/buffer.h; sourceTree = "<group>"; };
+		88D8677376C639DF8FFDC03F951DB9FA /* Disk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Disk.framework; path = Disk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B9A51404ED6678A7FD2E88689F2B966 /* Down.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Down.swift; path = Source/Down.swift; sourceTree = "<group>"; };
 		926B02F8E34DA8574AF874A1FA9E63AE /* Pods-NoteToDEVONthink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NoteToDEVONthink.release.xcconfig"; sourceTree = "<group>"; };
+		92FB40FDE3AC73274DF92A57125A3CD7 /* Disk+Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+Errors.swift"; path = "Sources/Disk+Errors.swift"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9FEA36A70A509FA36B3ADFBBD2664E1F /* FloatyItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatyItem.swift; path = Sources/FloatyItem.swift; sourceTree = "<group>"; };
-		A473D9A30E31FEB233B46177B924079F /* Floaty.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Floaty.modulemap; sourceTree = "<group>"; };
+		9B40D0555AEF300DA127E998DD4B128D /* Down.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Down.framework; path = Down.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B4EB5B2FB82DB0464980F3125EEE873 /* chunk.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = chunk.h; path = Source/cmark/chunk.h; sourceTree = "<group>"; };
+		9C2B848D2C6BD66B882631F8C0524CCF /* config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = config.h; path = Source/cmark/config.h; sourceTree = "<group>"; };
+		A4C67AB18BFC3BE656EB25A200409046 /* DownGroffRenderable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DownGroffRenderable.swift; path = Source/Renderers/DownGroffRenderable.swift; sourceTree = "<group>"; };
+		ABA25DF4976A898EF368EDB49609D5DD /* cmark.c */ = {isa = PBXFileReference; includeInIndex = 1; name = cmark.c; path = Source/cmark/cmark.c; sourceTree = "<group>"; };
+		ABBA73D9CDDEBB9C85CEA451DDA6FD25 /* FloatyManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatyManager.swift; path = Sources/FloatyManager.swift; sourceTree = "<group>"; };
+		AC21C5842934E13EFAA41C20D1234670 /* debug.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = debug.h; path = Source/cmark/debug.h; sourceTree = "<group>"; };
+		ADEC17D1DAB7FDEBB8B75F1EB0C7D717 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEFFE9D857EA6535B0193949A86EBDAD /* Pods-NoteToDEVONthink-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NoteToDEVONthink-frameworks.sh"; sourceTree = "<group>"; };
+		AFE4431D994F26F4C7F5231D8D6A26D0 /* Disk.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Disk.modulemap; sourceTree = "<group>"; };
 		B2C39A43C0A3DA5815D2B1D7DAC2975A /* Pods-NoteToDEVONthink-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NoteToDEVONthink-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B38F74B12E35599C128294D06FD28EA6 /* Floaty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Floaty.framework; path = Floaty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B60584ADCCF3DD48F68A40111CC12F50 /* DownView.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = DownView.bundle; path = Resources/DownView.bundle; sourceTree = "<group>"; };
 		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		B7604CE22E02862C85CDD35F5C36667E /* utf8.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = utf8.h; path = Source/cmark/utf8.h; sourceTree = "<group>"; };
 		B789B8E196E647F4E716744A5BCEF496 /* Pods-NoteToDEVONthink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NoteToDEVONthink.debug.xcconfig"; sourceTree = "<group>"; };
-		BF7A92AF2A392F8A054D243D46D9238A /* Pods_NoteToDEVONthink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NoteToDEVONthink.framework; path = "Pods-NoteToDEVONthink.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7DFD29BA8631ECED06D75EED777A206 /* FloatyDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatyDelegate.swift; path = Sources/FloatyDelegate.swift; sourceTree = "<group>"; };
+		BF6307C8B6B10E8FF4FE2958CF37E957 /* Disk-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Disk-prefix.pch"; sourceTree = "<group>"; };
+		C005ED9C37AE4426BF78622D1D0BB329 /* DownHTMLRenderable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DownHTMLRenderable.swift; path = Source/Renderers/DownHTMLRenderable.swift; sourceTree = "<group>"; };
+		C04A8F2767499455CDA6974D00B90285 /* buffer.c */ = {isa = PBXFileReference; includeInIndex = 1; name = buffer.c; path = Source/cmark/buffer.c; sourceTree = "<group>"; };
+		C689C51E16434EAEA0E0F3CE5EDF0215 /* Disk+Data.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+Data.swift"; path = "Sources/Disk+Data.swift"; sourceTree = "<group>"; };
 		CD3B900311136824B8CED1ED9643AF53 /* Pods-NoteToDEVONthink-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NoteToDEVONthink-dummy.m"; sourceTree = "<group>"; };
-		D86DA716C290E542D2067A7FFC0CE7A1 /* Floaty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Floaty.swift; path = Sources/Floaty.swift; sourceTree = "<group>"; };
+		CD5E04AF5BC99679E1F4A502C5B9F9EB /* iterator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = iterator.h; path = Source/cmark/iterator.h; sourceTree = "<group>"; };
+		CF2902636D0E95A62995D4DD5CE16352 /* entities.inc */ = {isa = PBXFileReference; includeInIndex = 1; name = entities.inc; path = Source/cmark/entities.inc; sourceTree = "<group>"; };
+		D0749273B562A515EA722D71141FE688 /* DownXMLRenderable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DownXMLRenderable.swift; path = Source/Renderers/DownXMLRenderable.swift; sourceTree = "<group>"; };
+		D3713DF786E42FD161057B7D9E4D1EBC /* Disk-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Disk-dummy.m"; sourceTree = "<group>"; };
+		D3DA79D693569071AA265F4D8DF394B4 /* xml.c */ = {isa = PBXFileReference; includeInIndex = 1; name = xml.c; path = Source/cmark/xml.c; sourceTree = "<group>"; };
+		D3E2B20D1E8283ADAAF2F0AE9545C048 /* case_fold_switch.inc */ = {isa = PBXFileReference; includeInIndex = 1; name = case_fold_switch.inc; path = Source/cmark/case_fold_switch.inc; sourceTree = "<group>"; };
+		D59B648D44C4757CC23E2D795395F62B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		DE3D5847743F50BD3DDF8766A24DC2A3 /* FloatyWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatyWindow.swift; path = Sources/FloatyWindow.swift; sourceTree = "<group>"; };
-		E2995F2534E42B250E0B1405156407A7 /* FloatyViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatyViewController.swift; path = Sources/FloatyViewController.swift; sourceTree = "<group>"; };
-		FAB772C35B61EE64725539473A097D91 /* Floaty-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Floaty-umbrella.h"; sourceTree = "<group>"; };
+		D94FBD75A472073418D0F86F72A88B66 /* render.c */ = {isa = PBXFileReference; includeInIndex = 1; name = render.c; path = Source/cmark/render.c; sourceTree = "<group>"; };
+		DC45CAC4BDCDB42BDAFAE7A2E52CEA2D /* Floaty-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Floaty-umbrella.h"; sourceTree = "<group>"; };
+		DCAA9479F4866E2FDC07CC030DF7C652 /* Disk+InternalHelpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Disk+InternalHelpers.swift"; path = "Sources/Disk+InternalHelpers.swift"; sourceTree = "<group>"; };
+		DD811E685B800843FFBE5BE654900A43 /* Pods_NoteToDEVONthink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NoteToDEVONthink.framework; path = "Pods-NoteToDEVONthink.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4D0CFEA7DAC9E7AE516B6C28E52EA38 /* Floaty-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Floaty-prefix.pch"; sourceTree = "<group>"; };
+		E507F48C459506B35C4407826128E8E3 /* FloatyItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatyItem.swift; path = Sources/FloatyItem.swift; sourceTree = "<group>"; };
+		E7AB6B35B508C0BBA81E67269B90401B /* DownOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DownOptions.swift; path = "Source/Enums & Options/DownOptions.swift"; sourceTree = "<group>"; };
+		E7C4D162E3D45681D2178F7B9D2E3F92 /* Disk.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Disk.xcconfig; sourceTree = "<group>"; };
+		E9313AB95D0102AEC09A53F3AB0615D8 /* Floaty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Floaty.swift; path = Sources/Floaty.swift; sourceTree = "<group>"; };
+		EA68B7A1DC04AE9D58496710522B2678 /* DownCommonMarkRenderable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DownCommonMarkRenderable.swift; path = Source/Renderers/DownCommonMarkRenderable.swift; sourceTree = "<group>"; };
+		EC25918827C321CD5D10E6C29A387EAF /* references.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = references.h; path = Source/cmark/references.h; sourceTree = "<group>"; };
+		EE2B45036AB8085AF1DA148B24FA8E70 /* Down-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Down-dummy.m"; sourceTree = "<group>"; };
+		F4F96E0C236F53CE50344199E0358E39 /* node.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = node.h; path = Source/cmark/node.h; sourceTree = "<group>"; };
+		F52A9D5C64C8A246BBE6185A5A6A17AF /* Disk.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Disk.swift; path = Sources/Disk.swift; sourceTree = "<group>"; };
+		F8C8DE622A01E8AD2F2E5D0DF402E565 /* Down-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Down-umbrella.h"; sourceTree = "<group>"; };
+		FB0FF85B0817D0C1614D4CF10A9E1B6D /* Disk-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Disk-umbrella.h"; sourceTree = "<group>"; };
+		FDACBE1C2C2766CC8753E4BFADE7762E /* cmark_export.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cmark_export.h; path = Source/cmark/cmark_export.h; sourceTree = "<group>"; };
+		FFBA44D8B29741BC005C8C53B69A9B21 /* houdini_html_u.c */ = {isa = PBXFileReference; includeInIndex = 1; name = houdini_html_u.c; path = Source/cmark/houdini_html_u.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6315D3447086ADFF49D9C2B7ECC939AB /* Frameworks */ = {
+		101DD059EA06C65CBFAA55616FA36E3B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7AC4DA25CCD62D7CD5D771E3705B11F /* Foundation.framework in Frameworks */,
+				D2CC2D6DAD0F3D1426794BFA9DF3318B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B101949798711A3FDE2B381B34553D6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC1233036640AC86D8ADE76938EE475C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,29 +258,52 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FEBAFD8BF9765BB9199153798F523880 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E90CDDCDAD5F6B662A23A3DACAE975CE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0EF186BC1ADC36CCD4707AD492AA1655 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				A473D9A30E31FEB233B46177B924079F /* Floaty.modulemap */,
-				844760DDD8444DE3962E83822737D287 /* Floaty.xcconfig */,
-				3E4E4EFADD39C5C169824A93CDB058FE /* Floaty-dummy.m */,
-				5C425F6252F4371E188CC46F62A751E1 /* Floaty-prefix.pch */,
-				FAB772C35B61EE64725539473A097D91 /* Floaty-umbrella.h */,
-				4626C8D04B1A79550D924B396FA034FF /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Floaty";
-			sourceTree = "<group>";
-		};
 		28B7B088831F2D59FD764D449CD3B212 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
 				A56427BF56381142B223CF7F40AADDAA /* Pods-NoteToDEVONthink */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3B588EB686AAF5A240939EA85074FAA6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AFE4431D994F26F4C7F5231D8D6A26D0 /* Disk.modulemap */,
+				E7C4D162E3D45681D2178F7B9D2E3F92 /* Disk.xcconfig */,
+				D3713DF786E42FD161057B7D9E4D1EBC /* Disk-dummy.m */,
+				BF6307C8B6B10E8FF4FE2958CF37E957 /* Disk-prefix.pch */,
+				FB0FF85B0817D0C1614D4CF10A9E1B6D /* Disk-umbrella.h */,
+				3712AAB5E5D284859D934470C3627DBE /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Disk";
+			sourceTree = "<group>";
+		};
+		3D8E2C5864D92080C339077095F22FA1 /* Floaty */ = {
+			isa = PBXGroup;
+			children = (
+				E9313AB95D0102AEC09A53F3AB0615D8 /* Floaty.swift */,
+				B7DFD29BA8631ECED06D75EED777A206 /* FloatyDelegate.swift */,
+				E507F48C459506B35C4407826128E8E3 /* FloatyItem.swift */,
+				ABBA73D9CDDEBB9C85CEA451DDA6FD25 /* FloatyManager.swift */,
+				4BADDFFDA38345965DB7731410FE7573 /* FloatyViewController.swift */,
+				56CF9838F0E2E4FD4390FD866F1C7250 /* FloatyWindow.swift */,
+				51DCE623B16058B8627A003FE0A5F9FF /* Support Files */,
+			);
+			name = Floaty;
+			path = Floaty;
 			sourceTree = "<group>";
 		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
@@ -122,13 +323,51 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		4CF378A555E053A026124B1797230913 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				18830D6D0970E0C10AC8754B0D76DEC6 /* Down.modulemap */,
+				7A9DADBE3C7CC3945B1E6F188F0619C3 /* Down.xcconfig */,
+				EE2B45036AB8085AF1DA148B24FA8E70 /* Down-dummy.m */,
+				7CB2CDF2FABF320A70AB7C4EFC2566DB /* Down-prefix.pch */,
+				F8C8DE622A01E8AD2F2E5D0DF402E565 /* Down-umbrella.h */,
+				D59B648D44C4757CC23E2D795395F62B /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Down";
+			sourceTree = "<group>";
+		};
+		51DCE623B16058B8627A003FE0A5F9FF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				724C07C3FADE1D1BBA80CB8466A4C15B /* Floaty.modulemap */,
+				44F73BEF02043401C878ED3850F90D33 /* Floaty.xcconfig */,
+				217F9F6EA57C1939804B8E0010A06053 /* Floaty-dummy.m */,
+				E4D0CFEA7DAC9E7AE516B6C28E52EA38 /* Floaty-prefix.pch */,
+				DC45CAC4BDCDB42BDAFAE7A2E52CEA2D /* Floaty-umbrella.h */,
+				ADEC17D1DAB7FDEBB8B75F1EB0C7D717 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Floaty";
+			sourceTree = "<group>";
+		};
+		5FE7077B82790D905FE6693439830CB6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE799C18A087ACA443E4913B0E2E4FFA /* Disk */,
+				F0B5F1C8E034061CB0D973A686166CBE /* Down */,
+				3D8E2C5864D92080C339077095F22FA1 /* Floaty */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				E949B91BBEF7274FD2E72323249CCDEC /* Pods */,
-				EE3A2EB40BFB1F24362C97AB47590089 /* Products */,
+				5FE7077B82790D905FE6693439830CB6 /* Pods */,
+				CB9C0D8EED2370758BE0425DEC608E51 /* Products */,
 				28B7B088831F2D59FD764D449CD3B212 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -151,46 +390,147 @@
 			path = "Target Support Files/Pods-NoteToDEVONthink";
 			sourceTree = "<group>";
 		};
-		CA9C2D2FFF81B47F2F8CB48631C74FB7 /* Floaty */ = {
+		AE799C18A087ACA443E4913B0E2E4FFA /* Disk */ = {
 			isa = PBXGroup;
 			children = (
-				D86DA716C290E542D2067A7FFC0CE7A1 /* Floaty.swift */,
-				34068DE07EEF2DFBCCFAAA54BEDEAFFA /* FloatyDelegate.swift */,
-				9FEA36A70A509FA36B3ADFBBD2664E1F /* FloatyItem.swift */,
-				68476F9B1E02EDABC3F62BEF2754AE99 /* FloatyManager.swift */,
-				E2995F2534E42B250E0B1405156407A7 /* FloatyViewController.swift */,
-				DE3D5847743F50BD3DDF8766A24DC2A3 /* FloatyWindow.swift */,
-				0EF186BC1ADC36CCD4707AD492AA1655 /* Support Files */,
+				1F0DA7464CF405AF800F7C825EF9EEAD /* Disk.h */,
+				F52A9D5C64C8A246BBE6185A5A6A17AF /* Disk.swift */,
+				731298EBAB65FF6BB9EA78B1BF69A9FC /* Disk+[Data].swift */,
+				7626DFEB7AC28F5EA21440670929534E /* Disk+[UIImage].swift */,
+				5F670E7AC583F59024BDC61A9B7781A8 /* Disk+Codable.swift */,
+				C689C51E16434EAEA0E0F3CE5EDF0215 /* Disk+Data.swift */,
+				92FB40FDE3AC73274DF92A57125A3CD7 /* Disk+Errors.swift */,
+				7B59D43E0B4E55135AEFCB402FC4ED96 /* Disk+Helpers.swift */,
+				DCAA9479F4866E2FDC07CC030DF7C652 /* Disk+InternalHelpers.swift */,
+				4D6C83975F182E4D977F18C63E2FDB91 /* Disk+UIImage.swift */,
+				39E46EE2190A99D81F3457D812ABC0BE /* Disk+VolumeInformation.swift */,
+				3B588EB686AAF5A240939EA85074FAA6 /* Support Files */,
 			);
-			name = Floaty;
-			path = Floaty;
+			name = Disk;
+			path = Disk;
 			sourceTree = "<group>";
 		};
-		E949B91BBEF7274FD2E72323249CCDEC /* Pods */ = {
+		CB9C0D8EED2370758BE0425DEC608E51 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CA9C2D2FFF81B47F2F8CB48631C74FB7 /* Floaty */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		EE3A2EB40BFB1F24362C97AB47590089 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B38F74B12E35599C128294D06FD28EA6 /* Floaty.framework */,
-				BF7A92AF2A392F8A054D243D46D9238A /* Pods_NoteToDEVONthink.framework */,
+				88D8677376C639DF8FFDC03F951DB9FA /* Disk.framework */,
+				9B40D0555AEF300DA127E998DD4B128D /* Down.framework */,
+				5DFCDF21297E2E316DF73B0C43A0BB3E /* Floaty.framework */,
+				DD811E685B800843FFBE5BE654900A43 /* Pods_NoteToDEVONthink.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F0B5F1C8E034061CB0D973A686166CBE /* Down */ = {
+			isa = PBXGroup;
+			children = (
+				6855B57CCB8C4C4094401C1D5F7598C1 /* blocks.c */,
+				C04A8F2767499455CDA6974D00B90285 /* buffer.c */,
+				88107509023D9B6236FB76366B9AAE47 /* buffer.h */,
+				D3E2B20D1E8283ADAAF2F0AE9545C048 /* case_fold_switch.inc */,
+				9B4EB5B2FB82DB0464980F3125EEE873 /* chunk.h */,
+				ABA25DF4976A898EF368EDB49609D5DD /* cmark.c */,
+				0B6F7A975F263B74D55A826F1339A8D2 /* cmark.h */,
+				3341F8D92906B5688FA7237F3E04BB49 /* cmark_ctype.c */,
+				0E4510E06E9D9338FC58936218B7F1FF /* cmark_ctype.h */,
+				FDACBE1C2C2766CC8753E4BFADE7762E /* cmark_export.h */,
+				4412721F011E326D194A1F66BE74740B /* cmark_version.h */,
+				4FD8854ACF435EEA4DE2EC45AFC9A6D3 /* commonmark.c */,
+				9C2B848D2C6BD66B882631F8C0524CCF /* config.h */,
+				0640D9827898C5251F853AF709FE6C57 /* COPYING */,
+				AC21C5842934E13EFAA41C20D1234670 /* debug.h */,
+				0A8CD06B904A189B023C71C4BD8EA6D5 /* Down.h */,
+				8B9A51404ED6678A7FD2E88689F2B966 /* Down.swift */,
+				3DA9CB2822411DD74AD5002A0E2261BF /* DownASTRenderable.swift */,
+				1EBB651571BBD1C3962CB69C08E93482 /* DownAttributedStringRenderable.swift */,
+				EA68B7A1DC04AE9D58496710522B2678 /* DownCommonMarkRenderable.swift */,
+				0610277B7CA59FA3904EC9B86DE1AB0A /* DownErrors.swift */,
+				A4C67AB18BFC3BE656EB25A200409046 /* DownGroffRenderable.swift */,
+				C005ED9C37AE4426BF78622D1D0BB329 /* DownHTMLRenderable.swift */,
+				6336F6BF72EA86DF5FA8BB9DFFE09428 /* DownLaTeXRenderable.swift */,
+				E7AB6B35B508C0BBA81E67269B90401B /* DownOptions.swift */,
+				4537B50FC985C0391056F4165E852192 /* DownRenderable.swift */,
+				17ED93DBE420BD8767F8C81FF1930C65 /* DownView.swift */,
+				D0749273B562A515EA722D71141FE688 /* DownXMLRenderable.swift */,
+				CF2902636D0E95A62995D4DD5CE16352 /* entities.inc */,
+				7352D553FB4CF7B21B93B26E915E065F /* houdini.h */,
+				03BB101999A7A66CF0A3F5292D769D21 /* houdini_href_e.c */,
+				1D44E09D237AFFD89C3155C1C3DA42B4 /* houdini_html_e.c */,
+				FFBA44D8B29741BC005C8C53B69A9B21 /* houdini_html_u.c */,
+				52AF6157BC6F01E0BAD949C6C46BB860 /* html.c */,
+				29A6E54586C4E0BE66621EE35EC930C7 /* html_unescape.h */,
+				47912E50FA7931B400D9A4C59EA01AA0 /* inlines.c */,
+				295CDC29B22AC0A5A82A93DD13FDA250 /* inlines.h */,
+				0526FBD339646706BDAE7D6694770465 /* iterator.c */,
+				CD5E04AF5BC99679E1F4A502C5B9F9EB /* iterator.h */,
+				3075D5AC83A2D80D7D6BBC6A72C62C89 /* latex.c */,
+				40A7C6C5341D873FD48D65EC43393F1B /* man.c */,
+				35670197A2CBDCF8D3153A548653FA19 /* module.modulemap */,
+				46971F63F73052355453C09184537834 /* node.c */,
+				F4F96E0C236F53CE50344199E0358E39 /* node.h */,
+				1B09D7221AA3CF1425BBA11F38B24B2E /* NSAttributedString+HTML.swift */,
+				20E5CA1E66B6290CF9F8F31D92C6DB13 /* parser.h */,
+				85C59ADBB226584BA013AC50601D05BC /* references.c */,
+				EC25918827C321CD5D10E6C29A387EAF /* references.h */,
+				D94FBD75A472073418D0F86F72A88B66 /* render.c */,
+				7359CD8A45768E609205B5CC1DAF4F8C /* render.h */,
+				5560EE0EF0491339A1CE21541EBDB313 /* scanners.c */,
+				5008425726BB0F59A030679CEC774373 /* scanners.h */,
+				1C8C107704CA17E8995577F89F7A9971 /* String+ToHTML.swift */,
+				1E199A3FA960F705B80012D3771EEE10 /* utf8.c */,
+				B7604CE22E02862C85CDD35F5C36667E /* utf8.h */,
+				D3DA79D693569071AA265F4D8DF394B4 /* xml.c */,
+				F9FCECF39262479186DD7BEC403B78A4 /* Resources */,
+				4CF378A555E053A026124B1797230913 /* Support Files */,
+			);
+			name = Down;
+			path = Down;
+			sourceTree = "<group>";
+		};
+		F9FCECF39262479186DD7BEC403B78A4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B60584ADCCF3DD48F68A40111CC12F50 /* DownView.bundle */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		D56FC83E8C4D5EBA77DA2012B0335338 /* Headers */ = {
+		9C28D7C793A07EBD55DFBFB585E9C1D9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2EC423E169845C02678A4983A1E56D5 /* Pods-NoteToDEVONthink-umbrella.h in Headers */,
+				A8F909B39333B28D10A25EFC8F6206AF /* Disk-umbrella.h in Headers */,
+				EEF0930DC9A866CA97209104C3BDE95D /* Disk.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A81E53149E9EF56F26CCC2CA70163743 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B1CCF775E8B99EFDAF99B7C31039A03 /* buffer.h in Headers */,
+				94A76FFDEBE9C06258A4C105C725548F /* chunk.h in Headers */,
+				4DD6D7274709B4B711C6975FD2ECF175 /* cmark.h in Headers */,
+				468446246C31037127AB0A849901C388 /* cmark_ctype.h in Headers */,
+				7800242EB559ED216DA3F86A40F506ED /* cmark_export.h in Headers */,
+				1BF68BC5E00AEC673F987CB8F00CB98D /* cmark_version.h in Headers */,
+				8EC11CA26BF537F56332125FA6507E3B /* config.h in Headers */,
+				0C8D2787A722FC732DB1734048FC9A98 /* debug.h in Headers */,
+				000657B09AF9B64204E16018F1787CE9 /* Down-umbrella.h in Headers */,
+				20113E09ADF2B6297A0A7D098B0C410B /* Down.h in Headers */,
+				83C9D84D18F068C8E7DB4E13A3892EF2 /* houdini.h in Headers */,
+				E96F9D9AC2CBC32D907EF5C081E5D13E /* html_unescape.h in Headers */,
+				4EB6BE72DDD21CEEF431CCE5991F4B77 /* inlines.h in Headers */,
+				731CF9298D7CD8F1071548107BBCC44F /* iterator.h in Headers */,
+				A0A196E7E9FFCEA5B45709E2E7CAF9C3 /* node.h in Headers */,
+				44330E3B11E04DBAF9BF2AF5529EEBBC /* parser.h in Headers */,
+				83EA7147D8AC3C38F2387F461DF58C84 /* references.h in Headers */,
+				192A95A4AC7C06AC37B1669A9D5DD113 /* render.h in Headers */,
+				7BE32500F19D20C12FE80F35A03FEE09 /* scanners.h in Headers */,
+				550F3F1B72DA9C3061D3E8B756FE0D61 /* utf8.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,9 +542,52 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F84B661DAF31835863D65DC1F527029C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C42520A6C7563E0A3996FC90931135DB /* Pods-NoteToDEVONthink-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		1691E754022217B52671D98A23731A08 /* Disk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBD9A2E3065E5BD8E663E08B81AE10F3 /* Build configuration list for PBXNativeTarget "Disk" */;
+			buildPhases = (
+				EB0563531EEEB613A542AE2A71D99286 /* Sources */,
+				101DD059EA06C65CBFAA55616FA36E3B /* Frameworks */,
+				9C28D7C793A07EBD55DFBFB585E9C1D9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Disk;
+			productName = Disk;
+			productReference = 88D8677376C639DF8FFDC03F951DB9FA /* Disk.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		43134A787828ADAA327E8EB54C1E5F6B /* Down */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFBB1EAB3985C86CDEFA01D51CF415C3 /* Build configuration list for PBXNativeTarget "Down" */;
+			buildPhases = (
+				FDB6B49FF4097764D596C2563B9D6FDB /* Sources */,
+				B101949798711A3FDE2B381B34553D6D /* Frameworks */,
+				A81E53149E9EF56F26CCC2CA70163743 /* Headers */,
+				3A7933A69F29FB63B0291D8529A6D906 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Down;
+			productName = Down;
+			productReference = 9B40D0555AEF300DA127E998DD4B128D /* Down.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		5C123A74CD9D6CDA27160800BA68B01A /* Floaty */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11DD83B99F71D3E302573ED38372EA3B /* Build configuration list for PBXNativeTarget "Floaty" */;
@@ -219,25 +602,27 @@
 			);
 			name = Floaty;
 			productName = Floaty;
-			productReference = B38F74B12E35599C128294D06FD28EA6 /* Floaty.framework */;
+			productReference = 5DFCDF21297E2E316DF73B0C43A0BB3E /* Floaty.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		9EB5199AC4A6B66C6090B6567EF1B392 /* Pods-NoteToDEVONthink */ = {
+		A6881E50BDFD814AD5D4FDAF5593C151 /* Pods-NoteToDEVONthink */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D9375993AAD31CE7FA7068E3136F920 /* Build configuration list for PBXNativeTarget "Pods-NoteToDEVONthink" */;
+			buildConfigurationList = E765595C456BFDCD66C939292D82091F /* Build configuration list for PBXNativeTarget "Pods-NoteToDEVONthink" */;
 			buildPhases = (
-				CBA10AFFF6DE5934AB678FA479373E9F /* Sources */,
-				6315D3447086ADFF49D9C2B7ECC939AB /* Frameworks */,
-				D56FC83E8C4D5EBA77DA2012B0335338 /* Headers */,
+				85F65C2B29F79707CAADDEDDB9550423 /* Sources */,
+				FEBAFD8BF9765BB9199153798F523880 /* Frameworks */,
+				F84B661DAF31835863D65DC1F527029C /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FBCB5202E5CA09EC6552A7D39B039F86 /* PBXTargetDependency */,
+				70EBCC7780CFD6A5B005FA9868FDCD50 /* PBXTargetDependency */,
+				EC01060645AF58098EB45242DB2385E1 /* PBXTargetDependency */,
+				6D9DCF28C102A0B859C7434D2A1B6BF1 /* PBXTargetDependency */,
 			);
 			name = "Pods-NoteToDEVONthink";
 			productName = "Pods-NoteToDEVONthink";
-			productReference = BF7A92AF2A392F8A054D243D46D9238A /* Pods_NoteToDEVONthink.framework */;
+			productReference = DD811E685B800843FFBE5BE654900A43 /* Pods_NoteToDEVONthink.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -257,15 +642,28 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = EE3A2EB40BFB1F24362C97AB47590089 /* Products */;
+			productRefGroup = CB9C0D8EED2370758BE0425DEC608E51 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				1691E754022217B52671D98A23731A08 /* Disk */,
+				43134A787828ADAA327E8EB54C1E5F6B /* Down */,
 				5C123A74CD9D6CDA27160800BA68B01A /* Floaty */,
-				9EB5199AC4A6B66C6090B6567EF1B392 /* Pods-NoteToDEVONthink */,
+				A6881E50BDFD814AD5D4FDAF5593C151 /* Pods-NoteToDEVONthink */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A7933A69F29FB63B0291D8529A6D906 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0B89DE0DF4D5162721A2E6D4DF90173 /* DownView.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		58D385880A221FD41E30877A347BC358 /* Sources */ = {
@@ -282,29 +680,104 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CBA10AFFF6DE5934AB678FA479373E9F /* Sources */ = {
+		85F65C2B29F79707CAADDEDDB9550423 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				846758B414123E512DF59BFC6B88B4F4 /* Pods-NoteToDEVONthink-dummy.m in Sources */,
+				970DD86D3E55F3D1DFDF4A9DBAAE8298 /* Pods-NoteToDEVONthink-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB0563531EEEB613A542AE2A71D99286 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEC58E9F92789CE9F44909BFA6592BF4 /* Disk+[Data].swift in Sources */,
+				54B4D9D1D7107638B4E79C329028CC10 /* Disk+[UIImage].swift in Sources */,
+				155278697DE95FE85991CE469BE2935B /* Disk+Codable.swift in Sources */,
+				D5426D24FACD6E34D5B83FC867EF7EAD /* Disk+Data.swift in Sources */,
+				B389F193C856F168B09FF64C805EAD4D /* Disk+Errors.swift in Sources */,
+				57F5F0E4502788A2CA95F2B30D4AFCE3 /* Disk+Helpers.swift in Sources */,
+				C90319AD1CBE6A1562D75FCDBEBBA5E0 /* Disk+InternalHelpers.swift in Sources */,
+				87CF22D207D6D38A8FEA9F8C12975BCA /* Disk+UIImage.swift in Sources */,
+				F138D47E78EB875A53715B233BB93CDD /* Disk+VolumeInformation.swift in Sources */,
+				AFB5DF952786BEE60F3F6FE3EFD2CF32 /* Disk-dummy.m in Sources */,
+				6F0B2BE8EB0273B15DD59ADA5CE3912B /* Disk.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDB6B49FF4097764D596C2563B9D6FDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7915ECA8F8B0CE609CA03B9F3F6DCB5 /* blocks.c in Sources */,
+				2252FFFCBAFFF5F169D06F648243CC15 /* buffer.c in Sources */,
+				6BB217A47BF12EC0E5C2985276E3499B /* case_fold_switch.inc in Sources */,
+				00B7B14F56CEF93D3AEF16FE7BBC88FB /* cmark.c in Sources */,
+				464CCAE1853887B3306C86AD6667D041 /* cmark_ctype.c in Sources */,
+				56986EB3048E82C2E75C08062A76BEEC /* commonmark.c in Sources */,
+				25A53A6E59E989464EC09DA6D466CFFE /* COPYING in Sources */,
+				2BC6137728D4457C916A5035F8BFECDB /* Down-dummy.m in Sources */,
+				EE7685DBFFDAB89FA29C17E75151F821 /* Down.swift in Sources */,
+				036622B83802F5AB58562ABCC92C7317 /* DownASTRenderable.swift in Sources */,
+				536507A41ABDA6D2410DF51E8D61563E /* DownAttributedStringRenderable.swift in Sources */,
+				549A8AC39E33F5799DAE0D79C0FCAAB1 /* DownCommonMarkRenderable.swift in Sources */,
+				96AB8684DCD75FEDEE26C6CC8DE979ED /* DownErrors.swift in Sources */,
+				9DE6610DDFE487E18D954D324AAA2AE4 /* DownGroffRenderable.swift in Sources */,
+				AF5ED2D9D9641F1CA246075046A9C5DF /* DownHTMLRenderable.swift in Sources */,
+				1A1D3BDA76E13F7406EF4D1BC7EFA8C2 /* DownLaTeXRenderable.swift in Sources */,
+				2E84CEFE84205D66F36692A6520E9E64 /* DownOptions.swift in Sources */,
+				AFE4728D9E4768E5811DAA1738816D92 /* DownRenderable.swift in Sources */,
+				E0A7230C0FB6E678EFAEA3D9B3264F0B /* DownView.swift in Sources */,
+				E8030598DD5BC1C0760B1E117B278ECC /* DownXMLRenderable.swift in Sources */,
+				9B2853D986ADAB2AB60E6D6C52BE1104 /* entities.inc in Sources */,
+				3577BE35AC5EBB6FF6558E1FE7619B4B /* houdini_href_e.c in Sources */,
+				9607B943866A9E9C00BB3029FCA0B844 /* houdini_html_e.c in Sources */,
+				B46C49D9F00BE136657F59D914D6A0C6 /* houdini_html_u.c in Sources */,
+				E93C648B7C5015A9AB600BC4CE21E344 /* html.c in Sources */,
+				30DC9C33F0E912559DC7ABE5EF3672FD /* inlines.c in Sources */,
+				2EBE11218D9CDEEE1BD343FB621ECBE9 /* iterator.c in Sources */,
+				C327377D21FD721380A6AADDCBA57B1D /* latex.c in Sources */,
+				B030630A8830E986FE0DA4A30962FB34 /* man.c in Sources */,
+				619AB476DE5632F2986E6A9BDCB651E8 /* module.modulemap in Sources */,
+				258E5A8DF0A54291EC9DC2A38BE376D3 /* node.c in Sources */,
+				EE8987E449D9C08E54DC7F6ECC763BE2 /* NSAttributedString+HTML.swift in Sources */,
+				1BB7826C6D9A2EAC1722BE2045528478 /* references.c in Sources */,
+				EE6FC0533BCE4FC251FE1D27C528B104 /* render.c in Sources */,
+				1F7FCBDFA749703EA43C9F35CA35CD92 /* scanners.c in Sources */,
+				19D3704943FCF2DCA40E9C9985CF5F93 /* String+ToHTML.swift in Sources */,
+				F7755E3B95D2BCDE6EECC35C68E09824 /* utf8.c in Sources */,
+				88386782A5E1E9642DCF4DF0EC96AB6E /* xml.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		FBCB5202E5CA09EC6552A7D39B039F86 /* PBXTargetDependency */ = {
+		6D9DCF28C102A0B859C7434D2A1B6BF1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Floaty;
 			target = 5C123A74CD9D6CDA27160800BA68B01A /* Floaty */;
-			targetProxy = 046E5D966F48CF1CD3E6BEAB7352E7CE /* PBXContainerItemProxy */;
+			targetProxy = 13D35431C682248C9CD726F4ECE08700 /* PBXContainerItemProxy */;
+		};
+		70EBCC7780CFD6A5B005FA9868FDCD50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Disk;
+			target = 1691E754022217B52671D98A23731A08 /* Disk */;
+			targetProxy = 5A139823E558548458BE8A238622E7C3 /* PBXContainerItemProxy */;
+		};
+		EC01060645AF58098EB45242DB2385E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Down;
+			target = 43134A787828ADAA327E8EB54C1E5F6B /* Down */;
+			targetProxy = 2F73E17148A4CBCA7361400DB26957E7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		170AB5C761177C756E452871F5948FD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 844760DDD8444DE3962E83822737D287 /* Floaty.xcconfig */;
+			baseConfigurationReference = 44F73BEF02043401C878ED3850F90D33 /* Floaty.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -333,7 +806,7 @@
 			};
 			name = Debug;
 		};
-		23175CDD5D7669E1263F07E73ED87FA7 /* Release */ = {
+		34951347070427940710643E9492070D /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 926B02F8E34DA8574AF874A1FA9E63AE /* Pods-NoteToDEVONthink.release.xcconfig */;
 			buildSettings = {
@@ -370,7 +843,7 @@
 		};
 		4C29DBCE921C61C3E9D588EE6F2A786C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 844760DDD8444DE3962E83822737D287 /* Floaty.xcconfig */;
+			baseConfigurationReference = 44F73BEF02043401C878ED3850F90D33 /* Floaty.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -388,6 +861,38 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Floaty/Floaty.modulemap";
 				PRODUCT_NAME = Floaty;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4C42421C83590D4B5ED243680A658659 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A9DADBE3C7CC3945B1E6F188F0619C3 /* Down.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Down/Down-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Down/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Down/Down.modulemap";
+				PRODUCT_NAME = Down;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -458,6 +963,37 @@
 			};
 			name = Release;
 		};
+		B4DFD151AC0472657EAF5F6B0D73E9A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7C4D162E3D45681D2178F7B9D2E3F92 /* Disk.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Disk/Disk-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Disk/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Disk/Disk.modulemap";
+				PRODUCT_NAME = Disk;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		B53EDD60891CA0A99618C4BA3DEEBB79 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -521,7 +1057,70 @@
 			};
 			name = Debug;
 		};
-		F484F2D07FD6F1A8918EA614679CF510 /* Debug */ = {
+		C5A9B36EA591BDB424104D1B45A1077F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A9DADBE3C7CC3945B1E6F188F0619C3 /* Down.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Down/Down-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Down/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Down/Down.modulemap";
+				PRODUCT_NAME = Down;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ED964B7463A146758B68801D25A7409D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7C4D162E3D45681D2178F7B9D2E3F92 /* Disk.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Disk/Disk-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Disk/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Disk/Disk.modulemap";
+				PRODUCT_NAME = Disk;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F708DFC6D184B9D47C84F95C277B0F5C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B789B8E196E647F4E716744A5BCEF496 /* Pods-NoteToDEVONthink.debug.xcconfig */;
 			buildSettings = {
@@ -577,11 +1176,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D9375993AAD31CE7FA7068E3136F920 /* Build configuration list for PBXNativeTarget "Pods-NoteToDEVONthink" */ = {
+		CBD9A2E3065E5BD8E663E08B81AE10F3 /* Build configuration list for PBXNativeTarget "Disk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F484F2D07FD6F1A8918EA614679CF510 /* Debug */,
-				23175CDD5D7669E1263F07E73ED87FA7 /* Release */,
+				B4DFD151AC0472657EAF5F6B0D73E9A1 /* Debug */,
+				ED964B7463A146758B68801D25A7409D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFBB1EAB3985C86CDEFA01D51CF415C3 /* Build configuration list for PBXNativeTarget "Down" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5A9B36EA591BDB424104D1B45A1077F /* Debug */,
+				4C42421C83590D4B5ED243680A658659 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E765595C456BFDCD66C939292D82091F /* Build configuration list for PBXNativeTarget "Pods-NoteToDEVONthink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F708DFC6D184B9D47C84F95C277B0F5C /* Debug */,
+				34951347070427940710643E9492070D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

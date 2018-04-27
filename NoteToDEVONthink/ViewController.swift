@@ -1,4 +1,5 @@
 import UIKit
+import Down
 
 // MARK : Date Structures
 class DEVONthinkNote {
@@ -40,7 +41,6 @@ class ViewController: UIViewController, UITextViewDelegate {
     var previousRect : CGRect!
     var lineCounter : Int!
     var wordCount : Int!
-    let placeholderText : String! = "Start writing your note..."
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,14 +51,19 @@ class ViewController: UIViewController, UITextViewDelegate {
         lineCounter = 1
         wordCount = 0
         Header.text = String("Lines: \(lineCounter!) | Words: \(wordCount!)")
-        
-        textView.text = placeholderText
-        textView.textColor = UIColor.lightGray
+                
         self.view.layoutIfNeeded()
         subscribeToShowKeyboardNotifications()
         addToolbar()
         
-        // snapshot("0Launch")
+        for familyName:String in UIFont.familyNames {
+            print("Family Name: \(familyName)")
+            for fontName:String in UIFont.fontNames(forFamilyName: familyName) {
+                print("--Font Name: \(fontName)")
+            }
+        }
+        
+        applyTheme()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -166,6 +171,19 @@ class ViewController: UIViewController, UITextViewDelegate {
     func subscribeToShowKeyboardNotifications() {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: .UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: .UIKeyboardWillHide, object: nil)
+    }
+    
+    // MARK : Themes
+    // TODO: Watch for themer changing theme
+    func applyTheme() {
+        let theme = Themer.sharedInstance.Dark()
+        
+        self.view.backgroundColor = theme.backgroundColor
+        self.Header.textColor = theme.textColor
+        
+        self.textView.backgroundColor = theme.backgroundColor
+        self.textView.textColor = theme.textColor
+        self.textView.font = UIFont(name: theme.font.fontName, size: theme.fontSize)
     }
 
 }

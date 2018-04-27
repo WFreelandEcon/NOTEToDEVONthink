@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		36188A822093621300F3AAF4 /* NoteToDEVONthinkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36188A812093621300F3AAF4 /* NoteToDEVONthinkUITests.swift */; };
 		36188A8B2093622D00F3AAF4 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36188A892093622900F3AAF4 /* SnapshotHelper.swift */; };
+		36232A4B2093901500DE6CD1 /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36232A4A2093901500DE6CD1 /* Template.swift */; };
+		36232A4D2093910C00DE6CD1 /* TemplateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36232A4C2093910C00DE6CD1 /* TemplateController.swift */; };
+		36232A7E2093A3F000DE6CD1 /* Themer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36232A7D2093A3F000DE6CD1 /* Themer.swift */; };
 		364F4589209284A800012C91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364F4588209284A800012C91 /* AppDelegate.swift */; };
 		364F458B209284A800012C91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364F458A209284A800012C91 /* ViewController.swift */; };
 		364F458E209284A800012C91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 364F458C209284A800012C91 /* Main.storyboard */; };
@@ -33,6 +36,9 @@
 		36188A812093621300F3AAF4 /* NoteToDEVONthinkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteToDEVONthinkUITests.swift; sourceTree = "<group>"; };
 		36188A832093621300F3AAF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36188A892093622900F3AAF4 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
+		36232A4A2093901500DE6CD1 /* Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Template.swift; sourceTree = "<group>"; };
+		36232A4C2093910C00DE6CD1 /* TemplateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateController.swift; sourceTree = "<group>"; };
+		36232A7D2093A3F000DE6CD1 /* Themer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Themer.swift; sourceTree = "<group>"; };
 		364F4585209284A800012C91 /* NoteToDEVONthink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteToDEVONthink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		364F4588209284A800012C91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		364F458A209284A800012C91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +78,23 @@
 			path = NoteToDEVONthinkUITests;
 			sourceTree = "<group>";
 		};
+		36232A4920938FBC00DE6CD1 /* Templating */ = {
+			isa = PBXGroup;
+			children = (
+				36232A4A2093901500DE6CD1 /* Template.swift */,
+				36232A4C2093910C00DE6CD1 /* TemplateController.swift */,
+			);
+			path = Templating;
+			sourceTree = "<group>";
+		};
+		36232A7C2093A3E200DE6CD1 /* Theming */ = {
+			isa = PBXGroup;
+			children = (
+				36232A7D2093A3F000DE6CD1 /* Themer.swift */,
+			);
+			path = Theming;
+			sourceTree = "<group>";
+		};
 		364F457C209284A800012C91 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +118,8 @@
 		364F4587209284A800012C91 /* NoteToDEVONthink */ = {
 			isa = PBXGroup;
 			children = (
+				36232A7C2093A3E200DE6CD1 /* Theming */,
+				36232A4920938FBC00DE6CD1 /* Templating */,
 				36188A892093622900F3AAF4 /* SnapshotHelper.swift */,
 				364F4588209284A800012C91 /* AppDelegate.swift */,
 				364F458A209284A800012C91 /* ViewController.swift */,
@@ -180,6 +205,7 @@
 					};
 					364F4584209284A800012C91 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 				};
 			};
@@ -230,10 +256,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-NoteToDEVONthink/Pods-NoteToDEVONthink-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Disk/Disk.framework",
+				"${BUILT_PRODUCTS_DIR}/Down/Down.framework",
 				"${BUILT_PRODUCTS_DIR}/Floaty/Floaty.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Disk.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Down.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Floaty.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,8 +320,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36232A4B2093901500DE6CD1 /* Template.swift in Sources */,
 				364F458B209284A800012C91 /* ViewController.swift in Sources */,
 				364F4589209284A800012C91 /* AppDelegate.swift in Sources */,
+				36232A7E2093A3F000DE6CD1 /* Themer.swift in Sources */,
+				36232A4D2093910C00DE6CD1 /* TemplateController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +515,7 @@
 			baseConfigurationReference = EC3413B8A0EE9009DBC97BA8 /* Pods-NoteToDEVONthink.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L7K45M5C78;
 				INFOPLIST_FILE = NoteToDEVONthink/Info.plist;
@@ -491,6 +525,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.adamf.note2devonthink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -501,6 +536,7 @@
 			baseConfigurationReference = C4D9D29D7B79A82A1DEEEC2E /* Pods-NoteToDEVONthink.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L7K45M5C78;
 				INFOPLIST_FILE = NoteToDEVONthink/Info.plist;
