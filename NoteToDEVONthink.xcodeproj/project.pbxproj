@@ -12,9 +12,11 @@
 		364F458E209284A800012C91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 364F458C209284A800012C91 /* Main.storyboard */; };
 		364F4590209284A900012C91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 364F458F209284A900012C91 /* Assets.xcassets */; };
 		364F4593209284A900012C91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 364F4591209284A900012C91 /* LaunchScreen.storyboard */; };
+		838172C8C9859195124A471C /* Pods_NoteToDEVONthink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A08DB5E9B8A509BD86B279 /* Pods_NoteToDEVONthink.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26A08DB5E9B8A509BD86B279 /* Pods_NoteToDEVONthink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoteToDEVONthink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		364F4585209284A800012C91 /* NoteToDEVONthink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteToDEVONthink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		364F4588209284A800012C91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		364F458A209284A800012C91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		364F458F209284A900012C91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		364F4592209284A900012C91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		364F4594209284A900012C91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4D9D29D7B79A82A1DEEEC2E /* Pods-NoteToDEVONthink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteToDEVONthink.release.xcconfig"; path = "Pods/Target Support Files/Pods-NoteToDEVONthink/Pods-NoteToDEVONthink.release.xcconfig"; sourceTree = "<group>"; };
+		EC3413B8A0EE9009DBC97BA8 /* Pods-NoteToDEVONthink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteToDEVONthink.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NoteToDEVONthink/Pods-NoteToDEVONthink.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				838172C8C9859195124A471C /* Pods_NoteToDEVONthink.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				364F4587209284A800012C91 /* NoteToDEVONthink */,
 				364F4586209284A800012C91 /* Products */,
+				E9B30A96668FD576BF27FF40 /* Pods */,
+				5EA0969F1E21394675896CB6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = NoteToDEVONthink;
 			sourceTree = "<group>";
 		};
+		5EA0969F1E21394675896CB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26A08DB5E9B8A509BD86B279 /* Pods_NoteToDEVONthink.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9B30A96668FD576BF27FF40 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC3413B8A0EE9009DBC97BA8 /* Pods-NoteToDEVONthink.debug.xcconfig */,
+				C4D9D29D7B79A82A1DEEEC2E /* Pods-NoteToDEVONthink.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 364F4597209284A900012C91 /* Build configuration list for PBXNativeTarget "NoteToDEVONthink" */;
 			buildPhases = (
+				E3A5CD3642B390C279BA8D5B /* [CP] Check Pods Manifest.lock */,
 				364F4581209284A800012C91 /* Sources */,
 				364F4582209284A800012C91 /* Frameworks */,
 				364F4583209284A800012C91 /* Resources */,
+				10B8A06DFAB42AA095B95694 /* [CP] Embed Pods Frameworks */,
+				3D06F83A8AC4AEC5864CA67D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10B8A06DFAB42AA095B95694 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NoteToDEVONthink/Pods-NoteToDEVONthink-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Floaty/Floaty.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Floaty.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NoteToDEVONthink/Pods-NoteToDEVONthink-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D06F83A8AC4AEC5864CA67D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NoteToDEVONthink/Pods-NoteToDEVONthink-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3A5CD3642B390C279BA8D5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NoteToDEVONthink-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		364F4581209284A800012C91 /* Sources */ = {
@@ -278,15 +359,13 @@
 		};
 		364F4598209284A900012C91 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC3413B8A0EE9009DBC97BA8 /* Pods-NoteToDEVONthink.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L7K45M5C78;
+				DEVELOPMENT_TEAM = C5KXQ9LTMW;
 				INFOPLIST_FILE = NoteToDEVONthink/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.adamf.NoteToDEVONthink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -296,15 +375,13 @@
 		};
 		364F4599209284A900012C91 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4D9D29D7B79A82A1DEEEC2E /* Pods-NoteToDEVONthink.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L7K45M5C78;
+				DEVELOPMENT_TEAM = C5KXQ9LTMW;
 				INFOPLIST_FILE = NoteToDEVONthink/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.adamf.NoteToDEVONthink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
