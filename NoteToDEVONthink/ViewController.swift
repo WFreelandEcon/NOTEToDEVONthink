@@ -57,6 +57,8 @@ class ViewController: UIViewController, UITextViewDelegate {
         self.view.layoutIfNeeded()
         subscribeToShowKeyboardNotifications()
         addToolbar()
+        
+        // snapshot("0Launch")
     }
     
     override func viewDidAppear(_ animated: Bool) {

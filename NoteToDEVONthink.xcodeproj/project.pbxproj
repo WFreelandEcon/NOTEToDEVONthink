@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36188A822093621300F3AAF4 /* NoteToDEVONthinkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36188A812093621300F3AAF4 /* NoteToDEVONthinkUITests.swift */; };
+		36188A8B2093622D00F3AAF4 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36188A892093622900F3AAF4 /* SnapshotHelper.swift */; };
 		364F4589209284A800012C91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364F4588209284A800012C91 /* AppDelegate.swift */; };
 		364F458B209284A800012C91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364F458A209284A800012C91 /* ViewController.swift */; };
 		364F458E209284A800012C91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 364F458C209284A800012C91 /* Main.storyboard */; };
@@ -15,8 +17,22 @@
 		838172C8C9859195124A471C /* Pods_NoteToDEVONthink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A08DB5E9B8A509BD86B279 /* Pods_NoteToDEVONthink.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		36188A842093621300F3AAF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 364F457D209284A800012C91 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 364F4584209284A800012C91;
+			remoteInfo = NoteToDEVONthink;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		26A08DB5E9B8A509BD86B279 /* Pods_NoteToDEVONthink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoteToDEVONthink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36188A7F2093621300F3AAF4 /* NoteToDEVONthinkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoteToDEVONthinkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		36188A812093621300F3AAF4 /* NoteToDEVONthinkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteToDEVONthinkUITests.swift; sourceTree = "<group>"; };
+		36188A832093621300F3AAF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36188A892093622900F3AAF4 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		364F4585209284A800012C91 /* NoteToDEVONthink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteToDEVONthink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		364F4588209284A800012C91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		364F458A209284A800012C91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,6 +45,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		36188A7C2093621300F3AAF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		364F4582209284A800012C91 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -40,10 +63,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36188A802093621300F3AAF4 /* NoteToDEVONthinkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				36188A812093621300F3AAF4 /* NoteToDEVONthinkUITests.swift */,
+				36188A832093621300F3AAF4 /* Info.plist */,
+			);
+			path = NoteToDEVONthinkUITests;
+			sourceTree = "<group>";
+		};
 		364F457C209284A800012C91 = {
 			isa = PBXGroup;
 			children = (
 				364F4587209284A800012C91 /* NoteToDEVONthink */,
+				36188A802093621300F3AAF4 /* NoteToDEVONthinkUITests */,
 				364F4586209284A800012C91 /* Products */,
 				E9B30A96668FD576BF27FF40 /* Pods */,
 				5EA0969F1E21394675896CB6 /* Frameworks */,
@@ -54,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				364F4585209284A800012C91 /* NoteToDEVONthink.app */,
+				36188A7F2093621300F3AAF4 /* NoteToDEVONthinkUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,6 +95,7 @@
 		364F4587209284A800012C91 /* NoteToDEVONthink */ = {
 			isa = PBXGroup;
 			children = (
+				36188A892093622900F3AAF4 /* SnapshotHelper.swift */,
 				364F4588209284A800012C91 /* AppDelegate.swift */,
 				364F458A209284A800012C91 /* ViewController.swift */,
 				364F458C209284A800012C91 /* Main.storyboard */,
@@ -91,6 +126,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		36188A7E2093621300F3AAF4 /* NoteToDEVONthinkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36188A862093621300F3AAF4 /* Build configuration list for PBXNativeTarget "NoteToDEVONthinkUITests" */;
+			buildPhases = (
+				36188A7B2093621300F3AAF4 /* Sources */,
+				36188A7C2093621300F3AAF4 /* Frameworks */,
+				36188A7D2093621300F3AAF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36188A852093621300F3AAF4 /* PBXTargetDependency */,
+			);
+			name = NoteToDEVONthinkUITests;
+			productName = NoteToDEVONthinkUITests;
+			productReference = 36188A7F2093621300F3AAF4 /* NoteToDEVONthinkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		364F4584209284A800012C91 /* NoteToDEVONthink */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 364F4597209284A900012C91 /* Build configuration list for PBXNativeTarget "NoteToDEVONthink" */;
@@ -121,6 +174,10 @@
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Adam Fallon";
 				TargetAttributes = {
+					36188A7E2093621300F3AAF4 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 364F4584209284A800012C91;
+					};
 					364F4584209284A800012C91 = {
 						CreatedOnToolsVersion = 9.3;
 					};
@@ -140,11 +197,19 @@
 			projectRoot = "";
 			targets = (
 				364F4584209284A800012C91 /* NoteToDEVONthink */,
+				36188A7E2093621300F3AAF4 /* NoteToDEVONthinkUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		36188A7D2093621300F3AAF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		364F4583209284A800012C91 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -212,6 +277,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		36188A7B2093621300F3AAF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36188A822093621300F3AAF4 /* NoteToDEVONthinkUITests.swift in Sources */,
+				36188A8B2093622D00F3AAF4 /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		364F4581209284A800012C91 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -222,6 +296,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		36188A852093621300F3AAF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 364F4584209284A800012C91 /* NoteToDEVONthink */;
+			targetProxy = 36188A842093621300F3AAF4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		364F458C209284A800012C91 /* Main.storyboard */ = {
@@ -243,6 +325,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		36188A872093621300F3AAF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C5KXQ9LTMW;
+				INFOPLIST_FILE = NoteToDEVONthinkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.adamf.NoteToDEVONthinkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NoteToDEVONthink;
+			};
+			name = Debug;
+		};
+		36188A882093621300F3AAF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C5KXQ9LTMW;
+				INFOPLIST_FILE = NoteToDEVONthinkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.adamf.NoteToDEVONthinkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NoteToDEVONthink;
+			};
+			name = Release;
+		};
 		364F4595209284A900012C91 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -363,10 +483,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C5KXQ9LTMW;
+				DEVELOPMENT_TEAM = L7K45M5C78;
 				INFOPLIST_FILE = NoteToDEVONthink/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.adamf.NoteToDEVONthink;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.adamf.note2devonthink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -379,10 +502,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C5KXQ9LTMW;
+				DEVELOPMENT_TEAM = L7K45M5C78;
 				INFOPLIST_FILE = NoteToDEVONthink/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.adamf.NoteToDEVONthink;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.adamf.note2devonthink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -392,6 +518,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		36188A862093621300F3AAF4 /* Build configuration list for PBXNativeTarget "NoteToDEVONthinkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36188A872093621300F3AAF4 /* Debug */,
+				36188A882093621300F3AAF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		364F4580209284A800012C91 /* Build configuration list for PBXProject "NoteToDEVONthink" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

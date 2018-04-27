@@ -1,0 +1,8 @@
+app_identifier("com.adamf.note2devonthink") # The bundle identifier of your app
+apple_id("afallon0@icloud.com") # Your Apple email address
+
+itc_team_id("95452801") # iTunes Connect Team ID
+team_id("L7K45M5C78") # Developer Portal Team ID
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile
