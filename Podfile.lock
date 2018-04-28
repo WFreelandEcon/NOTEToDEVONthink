@@ -2,17 +2,20 @@ PODS:
   - Disk (0.3.3)
   - Down (0.5.1)
   - Floaty (4.0.0)
+  - Toast-Swift (3.0.1)
 
 DEPENDENCIES:
   - Disk (~> 0.3.3)
   - Down
   - Floaty (~> 4.0.0)
+  - Toast-Swift (~> 3.0.1)
 
 SPEC CHECKSUMS:
   Disk: d1f55cd61f6ca20f368232d0c6e37e3c3dfcb63e
   Down: 6ace44ecec0c408826342ed420002f39a18e38c3
   Floaty: 4f88811bbf08521807f42355db6a9c0db85d5d78
+  Toast-Swift: ba0b01b095aada709d915f9beb1d38184a2721c3
 
-PODFILE CHECKSUM: 229b911ee2cd8e99803be6bcdbf4d50501184a01
+PODFILE CHECKSUM: 63fb9ac4d1cce8dc5ba72591815b6f1810816c06
 
 COCOAPODS: 1.4.0

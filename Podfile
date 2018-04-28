@@ -9,4 +9,5 @@ target 'NoteToDEVONthink' do
     pod "Floaty", "~> 4.0.0" 
     pod 'Disk', '~> 0.3.3'
     pod 'Down'
+    pod 'Toast-Swift', '~> 3.0.1'
 end

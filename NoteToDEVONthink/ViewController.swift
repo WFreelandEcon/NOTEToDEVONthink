@@ -38,6 +38,7 @@ extension String {
 class ViewController: UIViewController, UITextViewDelegate {
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var Header: UILabel!
+    @IBOutlet weak var settingsButton: UIButton!
     var previousRect : CGRect!
     var lineCounter : Int!
     var wordCount : Int!
@@ -190,6 +191,7 @@ class ViewController: UIViewController, UITextViewDelegate {
             
             self.textView.backgroundColor = loadedTheme.backgroundColor
             self.textView.textColor = loadedTheme.textColor
+            self.settingsButton.imageView?.image = loadedTheme.settingsImage
             // self.textView.font = UIFont(name: (loadedTheme.font?.fontName)!, size: loadedTheme.fontSize!)
         }
     }

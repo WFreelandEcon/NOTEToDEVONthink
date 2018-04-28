@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FDCA9200629730E574E5B3BA57255A50"
-               BuildableName = "Pods_NoteToDEVONthink.framework"
-               BlueprintName = "Pods-NoteToDEVONthink"
+               BlueprintIdentifier = "CC073B1DDF6CE52827F0A86CC6A188B6"
+               BuildableName = "Toast_Swift.framework"
+               BlueprintName = "Toast-Swift"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FDCA9200629730E574E5B3BA57255A50"
-            BuildableName = "Pods_NoteToDEVONthink.framework"
-            BlueprintName = "Pods-NoteToDEVONthink"
+            BlueprintIdentifier = "CC073B1DDF6CE52827F0A86CC6A188B6"
+            BuildableName = "Toast_Swift.framework"
+            BlueprintName = "Toast-Swift"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

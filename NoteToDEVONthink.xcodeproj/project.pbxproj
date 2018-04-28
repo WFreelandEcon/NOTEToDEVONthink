@@ -12,6 +12,9 @@
 		36232A4B2093901500DE6CD1 /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36232A4A2093901500DE6CD1 /* Template.swift */; };
 		36232A4D2093910C00DE6CD1 /* TemplateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36232A4C2093910C00DE6CD1 /* TemplateController.swift */; };
 		36232A7E2093A3F000DE6CD1 /* Themer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36232A7D2093A3F000DE6CD1 /* Themer.swift */; };
+		3634AF6620950D47009AD886 /* UIButton+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3634AF6520950D47009AD886 /* UIButton+Border.swift */; };
+		363772362094EB6D00992B5F /* TemplateInput.xib in Resources */ = {isa = PBXBuildFile; fileRef = 363772352094EB6D00992B5F /* TemplateInput.xib */; };
+		363772382094ED2200992B5F /* TemplateInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363772372094ED2200992B5F /* TemplateInputView.swift */; };
 		364F4589209284A800012C91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364F4588209284A800012C91 /* AppDelegate.swift */; };
 		364F458B209284A800012C91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364F458A209284A800012C91 /* ViewController.swift */; };
 		364F458E209284A800012C91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 364F458C209284A800012C91 /* Main.storyboard */; };
@@ -40,6 +43,9 @@
 		36232A4A2093901500DE6CD1 /* Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Template.swift; sourceTree = "<group>"; };
 		36232A4C2093910C00DE6CD1 /* TemplateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateController.swift; sourceTree = "<group>"; };
 		36232A7D2093A3F000DE6CD1 /* Themer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Themer.swift; sourceTree = "<group>"; };
+		3634AF6520950D47009AD886 /* UIButton+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Border.swift"; sourceTree = "<group>"; };
+		363772352094EB6D00992B5F /* TemplateInput.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TemplateInput.xib; sourceTree = "<group>"; };
+		363772372094ED2200992B5F /* TemplateInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateInputView.swift; sourceTree = "<group>"; };
 		364F4585209284A800012C91 /* NoteToDEVONthink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteToDEVONthink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		364F4588209284A800012C91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		364F458A209284A800012C91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +91,8 @@
 			children = (
 				36232A4A2093901500DE6CD1 /* Template.swift */,
 				36232A4C2093910C00DE6CD1 /* TemplateController.swift */,
+				363772352094EB6D00992B5F /* TemplateInput.xib */,
+				363772372094ED2200992B5F /* TemplateInputView.swift */,
 			);
 			path = Templating;
 			sourceTree = "<group>";
@@ -95,6 +103,14 @@
 				36232A7D2093A3F000DE6CD1 /* Themer.swift */,
 			);
 			path = Theming;
+			sourceTree = "<group>";
+		};
+		3634AF6420950D38009AD886 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3634AF6520950D47009AD886 /* UIButton+Border.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		364F457C209284A800012C91 = {
@@ -120,6 +136,7 @@
 		364F4587209284A800012C91 /* NoteToDEVONthink */ = {
 			isa = PBXGroup;
 			children = (
+				3634AF6420950D38009AD886 /* Extensions */,
 				36232A7C2093A3E200DE6CD1 /* Theming */,
 				36232A4920938FBC00DE6CD1 /* Templating */,
 				36188A892093622900F3AAF4 /* SnapshotHelper.swift */,
@@ -245,6 +262,7 @@
 			files = (
 				364F4593209284A900012C91 /* LaunchScreen.storyboard in Resources */,
 				364F4590209284A900012C91 /* Assets.xcassets in Resources */,
+				363772362094EB6D00992B5F /* TemplateInput.xib in Resources */,
 				364F458E209284A800012C91 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,12 +280,14 @@
 				"${BUILT_PRODUCTS_DIR}/Disk/Disk.framework",
 				"${BUILT_PRODUCTS_DIR}/Down/Down.framework",
 				"${BUILT_PRODUCTS_DIR}/Floaty/Floaty.framework",
+				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Disk.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Down.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Floaty.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -325,6 +345,8 @@
 			files = (
 				36232A4B2093901500DE6CD1 /* Template.swift in Sources */,
 				364F458B209284A800012C91 /* ViewController.swift in Sources */,
+				363772382094ED2200992B5F /* TemplateInputView.swift in Sources */,
+				3634AF6620950D47009AD886 /* UIButton+Border.swift in Sources */,
 				364F4589209284A800012C91 /* AppDelegate.swift in Sources */,
 				36232A7E2093A3F000DE6CD1 /* Themer.swift in Sources */,
 				36232A4D2093910C00DE6CD1 /* TemplateController.swift in Sources */,
@@ -368,11 +390,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C5KXQ9LTMW;
 				INFOPLIST_FILE = NoteToDEVONthinkUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.adamf.NoteToDEVONthinkUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -387,11 +405,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C5KXQ9LTMW;
 				INFOPLIST_FILE = NoteToDEVONthinkUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.adamf.NoteToDEVONthinkUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -523,10 +537,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L7K45M5C78;
 				INFOPLIST_FILE = NoteToDEVONthink/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.adamf.note2devonthink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -544,10 +555,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L7K45M5C78;
 				INFOPLIST_FILE = NoteToDEVONthink/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.adamf.note2devonthink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
