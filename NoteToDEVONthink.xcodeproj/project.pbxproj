@@ -17,6 +17,7 @@
 		364F458E209284A800012C91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 364F458C209284A800012C91 /* Main.storyboard */; };
 		364F4590209284A900012C91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 364F458F209284A900012C91 /* Assets.xcassets */; };
 		364F4593209284A900012C91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 364F4591209284A900012C91 /* LaunchScreen.storyboard */; };
+		367B963B2094A96500C16D44 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367B963A2094A96500C16D44 /* SettingsViewController.swift */; };
 		838172C8C9859195124A471C /* Pods_NoteToDEVONthink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A08DB5E9B8A509BD86B279 /* Pods_NoteToDEVONthink.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		364F458F209284A900012C91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		364F4592209284A900012C91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		364F4594209284A900012C91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		367B963A2094A96500C16D44 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		C4D9D29D7B79A82A1DEEEC2E /* Pods-NoteToDEVONthink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteToDEVONthink.release.xcconfig"; path = "Pods/Target Support Files/Pods-NoteToDEVONthink/Pods-NoteToDEVONthink.release.xcconfig"; sourceTree = "<group>"; };
 		EC3413B8A0EE9009DBC97BA8 /* Pods-NoteToDEVONthink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteToDEVONthink.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NoteToDEVONthink/Pods-NoteToDEVONthink.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,6 +129,7 @@
 				364F458F209284A900012C91 /* Assets.xcassets */,
 				364F4591209284A900012C91 /* LaunchScreen.storyboard */,
 				364F4594209284A900012C91 /* Info.plist */,
+				367B963A2094A96500C16D44 /* SettingsViewController.swift */,
 			);
 			path = NoteToDEVONthink;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				364F4589209284A800012C91 /* AppDelegate.swift in Sources */,
 				36232A7E2093A3F000DE6CD1 /* Themer.swift in Sources */,
 				36232A4D2093910C00DE6CD1 /* TemplateController.swift in Sources */,
+				367B963B2094A96500C16D44 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

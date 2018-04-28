@@ -63,6 +63,11 @@ class ViewController: UIViewController, UITextViewDelegate {
             }
         }
         
+        // NotificationCenter.default.addObserver(self, selector: Selector(("applyTheme")), name: UserDefaults.didChangeNotification, object: nil)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         applyTheme()
     }
     
@@ -159,9 +164,9 @@ class ViewController: UIViewController, UITextViewDelegate {
     }
     
     @objc func keyboardWillShow(_ notification: Notification) {
-        let userInfo = notification.userInfo
-        let keyboardSize = userInfo?[UIKeyboardFrameEndUserInfoKey] as! NSValue
-        let keyboardHeight = keyboardSize.cgRectValue.height
+//        let userInfo = notification.userInfo
+//        let keyboardSize = userInfo?[UIKeyboardFrameEndUserInfoKey] as! NSValue
+//        let keyboardHeight = keyboardSize.cgRectValue.height
     }
     
     @objc func keyboardWillHide(_ notification: Notification) {
@@ -174,16 +179,19 @@ class ViewController: UIViewController, UITextViewDelegate {
     }
     
     // MARK : Themes
-    // TODO: Watch for themer changing theme
     func applyTheme() {
-        let theme = Themer.sharedInstance.Dark()
+        guard let themeToApply = UserDefaults.standard.data(forKey: "Theme") else {
+            return
+        }
         
-        self.view.backgroundColor = theme.backgroundColor
-        self.Header.textColor = theme.textColor
-        
-        self.textView.backgroundColor = theme.backgroundColor
-        self.textView.textColor = theme.textColor
-        self.textView.font = UIFont(name: theme.font.fontName, size: theme.fontSize)
+        if let loadedTheme = NSKeyedUnarchiver.unarchiveObject(with: themeToApply) as? Theme {
+            self.view.backgroundColor = loadedTheme.backgroundColor
+            self.Header.textColor = loadedTheme.textColor
+            
+            self.textView.backgroundColor = loadedTheme.backgroundColor
+            self.textView.textColor = loadedTheme.textColor
+            // self.textView.font = UIFont(name: (loadedTheme.font?.fontName)!, size: loadedTheme.fontSize!)
+        }
     }
 
 }
