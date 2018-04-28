@@ -42,6 +42,8 @@ class ViewController: UIViewController, UITextViewDelegate {
     var previousRect : CGRect!
     var lineCounter : Int!
     var wordCount : Int!
+    var templates : [Template]?
+    var shortCuts = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,13 +65,23 @@ class ViewController: UIViewController, UITextViewDelegate {
                 print("--Font Name: \(fontName)")
             }
         }
-        
+
         // NotificationCenter.default.addObserver(self, selector: Selector(("applyTheme")), name: UserDefaults.didChangeNotification, object: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         applyTheme()
+
+        templates = nil
+        shortCuts = [String]()
+        templates = TemplateController.sharedInstance.retrieveAllTemplates()
+        
+        if let templateArray = templates {
+            for template : Template in templateArray {
+                shortCuts.append( template.shortCut )
+            }
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -122,6 +134,19 @@ class ViewController: UIViewController, UITextViewDelegate {
     // MARK: TextView Delegate Methods
     func textViewDidChange(_ textView: UITextView) {
         updateHeader(textView)
+        
+        let components = textView.text.components(separatedBy: .whitespacesAndNewlines)
+        let replacers = components.filter { (shortCuts.contains($0)) }
+        
+        if replacers.count > 0 {
+            for template in templates! {
+                replacers.forEach { word in
+                    if let range = textView.text.range(of: word) {
+                        textView.text.replaceSubrange(range, with: template.expansion)
+                    }
+                }
+            }
+        }
     }
     
     func textViewDidBeginEditing(_ textView: UITextView) {
@@ -195,6 +220,5 @@ class ViewController: UIViewController, UITextViewDelegate {
             // self.textView.font = UIFont(name: (loadedTheme.font?.fontName)!, size: loadedTheme.fontSize!)
         }
     }
-
 }
 

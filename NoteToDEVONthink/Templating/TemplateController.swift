@@ -7,28 +7,22 @@ class TemplateController {
     
     func storeTemplate( template : Template ) {
         do {
-            let unique = templateIsUnique(template: template).unique
-            if (unique) {
-                try Disk.save(template, to: .caches, as: "\(template.shortCut).json")
-            } else {
-                // Ask if it should be overwritten?
-            }
+            var templates = retrieveAllTemplates()
+            templates.append(template)
+            try Disk.save(templates, to: .caches, as: "templates.json")
         } catch {
             // Throw error
         }
     }
     
-    func templateIsUnique( template : Template ) -> (template: Template?, unique: Bool) {
+    func retrieveAllTemplates() -> [Template] {
         do {
-            let template = try Disk.retrieve("\(template.shortCut).json", from: .caches, as: Template.self)
-            return (template, false)
+            let templates = try Disk.retrieve("templates.json", from: .caches, as: [Template].self)
+            return templates
         } catch {
-            // Failure
+            // Throw error
         }
-        return (nil, true)
-    }
-    
-    func retrieveAllTemplates() -> [Template]? {
-        return nil
+        
+        return [Template]()
     }
 }
