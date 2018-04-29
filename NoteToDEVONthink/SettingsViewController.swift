@@ -21,6 +21,13 @@ class SettingsViewController : UIViewController, UITableViewDataSource, UITableV
         templates = TemplateController.sharedInstance.retrieveAllTemplates()
         self.tableView.dataSource = self
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        
+        
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(updateTemplateTable),
+            name: NSNotification.Name(rawValue: "SavedTemplate"),
+            object: nil)
     }
     
     @IBAction func changeToDarkTheme() {
@@ -60,5 +67,11 @@ class SettingsViewController : UIViewController, UITableViewDataSource, UITableV
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath as IndexPath)
         cell.textLabel!.text = "\(templates[indexPath.row].shortCut) -> \(templates[indexPath.row].expansion.components(separatedBy: .whitespacesAndNewlines))"
         return cell
+    }
+    
+    @objc func updateTemplateTable() {
+        templates = TemplateController.sharedInstance.retrieveAllTemplates()
+        self.tableView.reloadData()
+        self.view.makeToast("Added new template successfully", duration: 2.0, position: .bottom)
     }
 }

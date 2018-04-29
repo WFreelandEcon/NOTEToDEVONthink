@@ -10,6 +10,7 @@ class TemplateController {
             var templates = retrieveAllTemplates()
             templates.append(template)
             try Disk.save(templates, to: .caches, as: "templates.json")
+            NotificationCenter.default.post(name: Notification.Name("SavedTemplate"), object: nil)
         } catch {
             // Throw error
         }
