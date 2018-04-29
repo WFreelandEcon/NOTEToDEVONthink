@@ -10,4 +10,5 @@ target 'NoteToDEVONthink' do
     pod 'Disk', '~> 0.3.3'
     pod 'Down'
     pod 'Toast-Swift', '~> 3.0.1'
+    pod 'Marklight', :git => 'https://github.com/Stefanhym/Marklight', :branch => 'feature/swift4'
 end

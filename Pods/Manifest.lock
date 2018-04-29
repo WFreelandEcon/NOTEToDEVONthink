@@ -2,20 +2,33 @@ PODS:
   - Disk (0.3.3)
   - Down (0.5.1)
   - Floaty (4.0.0)
+  - Marklight (1.4.0)
   - Toast-Swift (3.0.1)
 
 DEPENDENCIES:
   - Disk (~> 0.3.3)
   - Down
   - Floaty (~> 4.0.0)
+  - Marklight (from `https://github.com/Stefanhym/Marklight`, branch `feature/swift4`)
   - Toast-Swift (~> 3.0.1)
+
+EXTERNAL SOURCES:
+  Marklight:
+    :branch: feature/swift4
+    :git: https://github.com/Stefanhym/Marklight
+
+CHECKOUT OPTIONS:
+  Marklight:
+    :commit: 36287bab6987d56375cae773d89f2017a21aa149
+    :git: https://github.com/Stefanhym/Marklight
 
 SPEC CHECKSUMS:
   Disk: d1f55cd61f6ca20f368232d0c6e37e3c3dfcb63e
   Down: 6ace44ecec0c408826342ed420002f39a18e38c3
   Floaty: 4f88811bbf08521807f42355db6a9c0db85d5d78
+  Marklight: c175962a8d5a6f07b3e244ec6a2986404153cff4
   Toast-Swift: ba0b01b095aada709d915f9beb1d38184a2721c3
 
-PODFILE CHECKSUM: 63fb9ac4d1cce8dc5ba72591815b6f1810816c06
+PODFILE CHECKSUM: 5fc928443dcec6758d16a1b6400e26612675c479
 
 COCOAPODS: 1.4.0

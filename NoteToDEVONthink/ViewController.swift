@@ -1,5 +1,6 @@
 import UIKit
 import Down
+import Marklight
 
 // MARK : Date Structures
 class DEVONthinkNote {
@@ -45,6 +46,9 @@ class ViewController: UIViewController, UITextViewDelegate {
     var templates : [Template]?
     var shortCuts = [String]()
     
+    // MARK: Marklight
+    // let textStorage = MarklightTextStorage()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: .UIKeyboardDidShow, object: nil)
@@ -65,8 +69,6 @@ class ViewController: UIViewController, UITextViewDelegate {
                 print("--Font Name: \(fontName)")
             }
         }
-
-        // NotificationCenter.default.addObserver(self, selector: Selector(("applyTheme")), name: UserDefaults.didChangeNotification, object: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -138,17 +140,18 @@ class ViewController: UIViewController, UITextViewDelegate {
         let components = textView.text.components(separatedBy: .whitespacesAndNewlines)
         let replacers = components.filter { (shortCuts.contains($0)) }
         
-        // TODO: Fix this it isn't working right.
         if replacers.count > 0 {
             for template in templates! {
                 replacers.forEach { word in
                     if let range = textView.text.range(of: word) {
-                        textView.text.replaceSubrange(range, with: template.expansion)
+                        if (word == template.shortCut) {
+                            textView.text.replaceSubrange(range, with: template.expansion)
+                        }
                     }
                 }
             }
         }
-    }
+}
     
     func textViewDidBeginEditing(_ textView: UITextView) {
         if textView.textColor == UIColor.lightGray {
