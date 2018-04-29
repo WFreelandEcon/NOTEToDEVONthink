@@ -138,6 +138,7 @@ class ViewController: UIViewController, UITextViewDelegate {
         let components = textView.text.components(separatedBy: .whitespacesAndNewlines)
         let replacers = components.filter { (shortCuts.contains($0)) }
         
+        // TODO: Fix this it isn't working right.
         if replacers.count > 0 {
             for template in templates! {
                 replacers.forEach { word in

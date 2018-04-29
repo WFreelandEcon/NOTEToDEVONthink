@@ -10,11 +10,17 @@ import Foundation
 import UIKit
 import Toast_Swift
 
-class SettingsViewController : UIViewController {
+class SettingsViewController : UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var tableView: UITableView!        
+    var templates = [Template]()
+    
     
     override func viewDidLoad() {
-         super.viewDidLoad()
+        super.viewDidLoad()
+        self.tableView.delegate = self
+        templates = TemplateController.sharedInstance.retrieveAllTemplates()
+        self.tableView.dataSource = self
+        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
     
     @IBAction func changeToDarkTheme() {
@@ -40,5 +46,19 @@ class SettingsViewController : UIViewController {
     
     @IBAction func closeSettings() {
         self.navigationController?.popViewController(animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return templates.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath as IndexPath)
+        cell.textLabel!.text = "\(templates[indexPath.row].shortCut) -> \(templates[indexPath.row].expansion.components(separatedBy: .whitespacesAndNewlines))"
+        return cell
     }
 }
