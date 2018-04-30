@@ -6,9 +6,6 @@ target 'NoteToDEVONthink' do
   use_frameworks!
 
   # Pods for NoteToDEVONthink
-    pod "Floaty", "~> 4.0.0" 
     pod 'Disk', '~> 0.3.3'
-    pod 'Down'
     pod 'Toast-Swift', '~> 3.0.1'
-    pod 'Marklight', :git => 'https://github.com/Stefanhym/Marklight', :branch => 'feature/swift4'
 end

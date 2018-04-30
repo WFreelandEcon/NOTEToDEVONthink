@@ -1,6 +1,4 @@
 import UIKit
-import Down
-import Marklight
 
 // MARK : Date Structures
 class DEVONthinkNote {

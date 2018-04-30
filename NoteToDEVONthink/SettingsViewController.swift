@@ -74,4 +74,10 @@ class SettingsViewController : UIViewController, UITableViewDataSource, UITableV
         self.tableView.reloadData()
         self.view.makeToast("Added new template successfully", duration: 2.0, position: .bottom)
     }
+    
+    @IBAction func showCopyRight() {
+        let alert = UIAlertController(title: "Copyright & Notices", message: "DEVONthink™️ and DEVONthink To Go™️ are registered trademarks of DEVONtechnologies, LLC. \nhttps://www.devontechnologies.com\n\nThird Party Libraries: \n\nToast-Swift: https://github.com/scalessec/Toast-Swift/blob/master/LICENSE \n\nDisk: https://github.com/saoudrizwan/Disk/blob/master/LICENSE", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
 }
