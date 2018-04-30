@@ -39,6 +39,10 @@ class TemplateController {
         return [Template]()
     }
     
+    func updateTemplate(template : Template) {
+        
+    }
+    
     func removeTemplate(template : Template, completion: (_ done: Bool) -> Void) {
         do {
             var templates = try Disk.retrieve("templates.json", from: .caches, as: [Template].self)

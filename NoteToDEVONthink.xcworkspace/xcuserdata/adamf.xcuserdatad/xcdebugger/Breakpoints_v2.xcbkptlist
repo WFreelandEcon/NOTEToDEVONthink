@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NoteToDEVONthink/Templating/TemplateController.swift"
-            timestampString = "546810758.780069"
+            timestampString = "546811085.780521"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
             landmarkName = "removeTemplate(template:completion:)"
             landmarkType = "7">
          </BreakpointContent>
