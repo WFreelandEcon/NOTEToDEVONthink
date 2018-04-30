@@ -63,6 +63,18 @@ class SettingsViewController : UIViewController, UITableViewDataSource, UITableV
         return templates.count
     }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let templateToDelete = templates[indexPath.row]
+            TemplateController.sharedInstance.removeTemplate(template: templateToDelete) { result in
+                if result == true {
+                    templates = TemplateController.sharedInstance.retrieveAllTemplates()
+                    tableView.deleteRows(at: [indexPath], with: .fade)
+                }
+            }
+        }
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath as IndexPath)
         cell.textLabel!.text = "\(templates[indexPath.row].shortCut) -> \(templates[indexPath.row].expansion.components(separatedBy: .whitespacesAndNewlines))"
